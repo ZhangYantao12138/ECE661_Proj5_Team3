@@ -3,7 +3,7 @@
 **Course:** ECE 661, Fall 2026  
 **Selected topic:** Project 5 - Adversarial Patch Attack  
 **Group:** Team 3  
-**Team members:** [Member A: full name and NetID]; Russo Zhang (yz1047), Member B; [Member C: full name and NetID]; [Member D: full name and NetID]  
+**Team members:** 余希泰 (xy195), Member A; Russo Zhang (yz1047), Member B; 赵博毅 (bz138), Member C; 杨子江 (zy232), Member D  
 **Proposal date:** October 19, 2026
 
 ## 1. What are we trying to do?
@@ -75,10 +75,10 @@ Core comparisons will use at least three independent patch initializations, with
 
 | Member | Main responsibility | Concrete deliverables |
 |---|---|---|
-| **A: [Name]** | Data, classifier baselines, shared evaluation, and result auditing | Fixed splits; three model checkpoints and configurations; clean-accuracy and occlusion-control tables; validated metrics |
+| **A: 余希泰 (xy195)** | Data, classifier baselines, shared evaluation, and result auditing | Fixed splits; three model checkpoints and configurations; clean-accuracy and occlusion-control tables; validated metrics |
 | **B: Russo Zhang (yz1047)** | Universal patch implementation and basic experiments | Targeted and untargeted optimization; complete size/class sweep; saved patches; attack curves and qualitative examples |
-| **C: [Name]** | Transfer evaluation and ensemble extension | Basic cross-model transfer results; ensemble optimizer; held-out transfer and compute-budget comparisons |
-| **D: [Name]** | Preprocessing defenses and adaptive evaluation | Defense modules; clean-performance costs; adaptive patch optimization; defense and attack-strength comparisons |
+| **C: 赵博毅 (bz138)** | Transfer evaluation and ensemble extension | Basic cross-model transfer results; ensemble optimizer; held-out transfer and compute-budget comparisons |
+| **D: 杨子江 (zy232)** | Preprocessing defenses and adaptive evaluation | Defense modules; clean-performance costs; adaptive patch optimization; defense and attack-strength comparisons |
 
 Each member will write the methods and analysis for their experiments and review another member's results. A preliminary model and one working patch will be shared early so transfer and defense work can proceed before the full basic sweep is complete. All members will participate in poster preparation, presentation, and Q&A preparation.
 
