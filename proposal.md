@@ -4,7 +4,7 @@
 **Selected topic:** Project 5 - Adversarial Patch Attack  
 **Group:** Team 3  
 **Team members:** 余希泰 (xy195), Member A; Russo Zhang (yz1047), Member B; 赵博毅 (bz138), Member C; 杨子江 (zy232), Member D  
-**Proposal date:** October 19, 2026
+**Proposal date:** October 25, 2026
 
 ## 1. What are we trying to do?
 
@@ -16,7 +16,7 @@ Our project will address three research questions:
 2. **Transferability:** Does optimizing a patch jointly against multiple source models improve its effectiveness against a held-out architecture under comparable computational budgets?
 3. **Defense evaluation:** How much do simple preprocessing defenses reduce attack success, and how does their apparent benefit change when patch optimization accounts for the defense?
 
-We will complete the topic's basic requirements and propose two additional investigations for our four-person team: **ensemble-based patch optimization** and **preprocessing defenses evaluated with adaptive attacks**. We will confirm the extension scope with the TAs. The contribution will be a controlled empirical study; ensemble optimization and transformation-aware attacks are established techniques, rather than new algorithms introduced by this project.
+Our four-person team will complete all basic requirements and two extensions: **ensemble-based patch optimization** and **preprocessing defenses evaluated with adaptive attacks**. Our contribution is a controlled empirical study of established methods on CIFAR-10.
 
 ## 2. How is it done today?
 
@@ -32,7 +32,7 @@ We will adapt these ideas to small CIFAR-10 classifiers and study them under con
 
 We will use CIFAR-10 [3] at its original 32 x 32 resolution. We will create a fixed, stratified split of the official training set into 45,000 training images and 5,000 validation images, and reserve the official 10,000 test images for final evaluation. Classifier fitting and patch optimization will use only training images; hyperparameter selection and early stopping will use validation images.
 
-We will train a ResNet-20 as the primary source classifier, together with a small CIFAR-adapted VGG and DenseNet. Exact secondary-model configurations will be fixed after clean-accuracy and runtime pilots. DenseNet will serve as the held-out architecture for the ensemble extension: its attack results will not guide patch optimization, ensemble weights, or hyperparameter selection. We will report classifier configurations and clean accuracy so attack results can be interpreted against model quality.
+We will train a ResNet-20 as the primary source classifier, a CIFAR-adapted VGG-11 with batch normalization, and a DenseNet-BC with depth 40 and growth rate 12. DenseNet will serve as the held-out architecture for the ensemble extension: its attack results will not guide patch optimization, ensemble weights, or hyperparameter selection. We will report classifier configurations and clean accuracy so attack results can be interpreted against model quality.
 
 Experiments will use shared data splits, preprocessing, patch-placement rules, and evaluation code. Patches will be applied in pixel space before model normalization. We will document the nominal patch dimensions, transformation distribution, and actual coverage after transformation, and use matched settings across comparisons.
 
@@ -51,9 +51,9 @@ We will evaluate nominal patch sizes of **3 x 3, 5 x 5, 7 x 7, and 16 x 16**, in
 
 ### 3.3 Extension 1: ensemble optimization and transferability
 
-We will compare patches optimized against ResNet alone, VGG alone, and an equal-weight average of the two models' attack losses. DenseNet will remain outside the optimization process. The extension will initially cover 5 x 5 and 7 x 7 patches, both attack types, and all ten targeted classes.
+We will compare patches optimized against ResNet alone, VGG alone, and an equal-weight average of the two models' attack losses. DenseNet will remain outside the optimization process. The extension will cover 5 x 5 and 7 x 7 patches, both attack types, and all ten targeted classes.
 
-We hypothesize that jointly optimizing against two architectures may reduce dependence on source-specific features and improve held-out transfer. We will test this hypothesis rather than assume an improvement. Because each ensemble step requires additional computation, we will report optimization steps and elapsed time and include a comparison under matched elapsed-time budgets on the same hardware. A pilot will establish practical budgets before final evaluation.
+We hypothesize that jointly optimizing against two architectures may reduce dependence on source-specific features and improve held-out transfer. We will test this hypothesis rather than assume an improvement. Because each ensemble step requires additional computation, we will report optimization steps and elapsed time and include a comparison under matched elapsed-time budgets on the same hardware. Optimization budgets will be calibrated on validation data and fixed before final evaluation.
 
 ### 3.4 Extension 2: preprocessing defenses and adaptive attacks
 
@@ -82,11 +82,61 @@ Core comparisons will use at least three independent patch initializations, with
 
 Each member will write the methods and analysis for their experiments and review another member's results. A preliminary model and one working patch will be shared early so transfer and defense work can proceed before the full basic sweep is complete. All members will participate in poster preparation, presentation, and Q&A preparation.
 
-### 3.7 Workflow, dependencies, and parallel execution
+## 4. What are the risks?
 
-We will organize the work into two stages: development and integration, followed by the planned experiments. Solid arrows indicate prerequisite deliveries. Dashed arrows indicate early prototype handoffs for integration; final measurements will use finalized artifacts. Independent branches can proceed concurrently, subject to accelerator availability.
+| Risk | Planned response |
+|---|---|
+| Small patches or targeted transfer achieve low ASR | Verify gradients and loss direction on a pilot; compare with occlusion controls; diagnose optimization on validation data; report failures alongside successful cases. |
+| Ensemble gains come mainly from additional computation | Report both fixed-step and matched-time comparisons with the same data and transformation settings. |
+| A defense appears robust because the attack is poorly optimized | Optimize through the defense, account for randomness, and check stronger attack budgets and independent restarts. |
+| Classifier training and experiment sweeps exceed available resources | Benchmark early, reuse frozen models, batch evaluation, and prioritize the full basic matrix and the two defined extensions over additional ablations. |
+| Evaluation choices produce misleading comparisons | Share metric code, record ASR denominators, preserve full-test accuracy, and keep test data out of configuration selection. |
 
-**Stage 1: Development and integration.** After the team agrees on data splits, interfaces, metrics, and scope, all four members can begin implementation. A will provide a preliminary ResNet checkpoint before completing all three classifiers. B will share the first working 7 x 7 patch and its configuration before completing the full attack sweep, allowing C and D to check their interfaces and prediction pipelines early.
+The experiments will use public CIFAR-10 images and models controlled by the team. We will collect no new personal data, attribute reused code and methods, and limit conclusions to this digital benchmark.
+
+## 5. How long will it take, and what resources are needed?
+
+Implementation, experimentation, and analysis will run from October 25 through November 29, followed by presentation and report preparation.
+
+| Dates, 2026 | Milestone |
+|---|---|
+| **Oct. 25-26** | Finalize interfaces and data splits, complete feasibility checks, and submit the proposal by Oct. 26, 11:59 p.m. Eastern Time. |
+| **Oct. 27-Nov. 8** | Complete classifier baselines and the main patch implementation; run the basic attack and transfer matrix. |
+| **Nov. 9-16** | Obtain initial ensemble and defense results; prepare the optional Nov. 16 TA check-in. |
+| **Nov. 17-29** | Complete adaptive attacks, budget-matched comparisons, core repeats, and attack-strength checks. |
+| **Nov. 30-Dec. 8** | Audit results, finalize figures, prepare the poster and report, and rehearse the presentation. |
+| **Dec. 9** | Attend the in-person poster session, 1:00-4:00 p.m. Eastern Time. |
+| **Dec. 10-11** | Incorporate feedback and submit the final report by Dec. 11, 11:59 p.m. Eastern Time. |
+
+The project requires accelerator access for three CIFAR-scale classifiers and patch optimization, with storage for checkpoints and logs. We will use the course compute allocation within the group budget of up to $250. Generative-model API calls are unnecessary for the experiments. Runtime measurements will guide scheduling and resource use.
+
+## 6. What are the final "exams" for success?
+
+The project will be successful if we can deliver reproducible evidence addressing all three research questions, including negative findings where appropriate. Specifically, we will provide:
+
+1. **Basic study:** all four sizes, untargeted attacks, ten targeted classes, patch visualizations, and cross-model transfer.
+2. **Ensemble study:** held-out transfer and compute-matched single-model comparisons.
+3. **Defense study:** clean-accuracy costs, non-adaptive attacks, and adaptive attacks.
+4. **Reproducibility:** models, patches, configurations, seeds, metrics, timing logs, and documented execution commands.
+5. **Presentation and report:** printed/PDF poster, all-member presentation, and a final report within the course page limit, with supplementary material.
+
+Expected outputs include patch-size curves, target-class heatmaps, transfer matrices, and defense comparisons. Conclusions will be supported by measured results, including negative findings.
+
+## AI Assistance Disclosure
+
+Generative AI assisted with project-scope discussion, extension selection, task allocation, drafting, and document formatting. The authors retain responsibility for the submitted content, including methods, references, code, and claims. The final report will disclose subsequent AI use and the procedures used to verify AI-assisted work.
+
+## References
+
+1. Tom B. Brown, Dandelion Mané, Aurko Roy, Martín Abadi, and Justin Gilmer. **Adversarial Patch.** arXiv:1712.09665, 2017. [Paper](https://arxiv.org/abs/1712.09665).
+2. Anish Athalye, Nicholas Carlini, and David Wagner. **Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples.** ICML, 2018. [Paper](https://arxiv.org/abs/1802.00420).
+3. Alex Krizhevsky. **Learning Multiple Layers of Features from Tiny Images.** Technical report, 2009. [CIFAR-10 dataset and report](https://cave.cs.toronto.edu/kriz/cifar.html).
+
+## Appendix. Workflow and dependencies
+
+Solid arrows indicate prerequisite deliveries; dashed arrows indicate early prototype handoffs. Independent branches can proceed concurrently within the available compute capacity. Roles A-D correspond to the named team members in Section 3.6.
+
+**Stage 1: Development and integration.** A delivers an initial ResNet checkpoint while completing the three final classifiers. B shares the first working 7 x 7 patch so C and D can check their pipelines before the basic sweep is complete.
 
 ```mermaid
 flowchart TD
@@ -115,7 +165,7 @@ flowchart TD
     D1 --> G
 ```
 
-**Stage 2: Experiments and evaluation.** Once the shared tools and settings are ready, A's controls, B's basic attack sweep, C's ensemble patch optimization, and D's adaptive patch optimization can proceed in parallel. Patch optimization will continue to use training data and the fixed validation-based selection rules. Final test evaluation will follow the agreed protocol without feeding test results back into configuration selection.
+**Stage 2: Experiments and evaluation.** With models and settings finalized, controls, basic attacks, ensemble optimization, and adaptive optimization proceed in parallel. C and D receive B's original patches in batches for transfer and non-adaptive defense evaluation.
 
 ```mermaid
 flowchart TD
@@ -142,61 +192,4 @@ flowchart TD
     R --> F["All members: Write assigned sections<br/>Prepare report, poster, presentation, and Q&A"]
 ```
 
-The key dependency rules are:
-
-- **C can develop and optimize ensemble attacks without waiting for B's full sweep**, once the required source models and shared optimizer are available. Basic transfer evaluation requires B's corresponding patches, which can be delivered in batches.
-- **D can develop defenses and optimize adaptive patches without waiting for all basic attacks.** Non-adaptive versus adaptive comparisons require the corresponding original and defense-aware patches.
-- **Prototype integration is separate from final measurement.** Preliminary models and patches help identify implementation errors; the reported results must use the finalized models, preprocessing, and evaluation protocol.
-- **DenseNet remains held out from attack-method selection.** Its attack results will be used for the planned final transfer evaluation, not to tune ensemble weights, attack budgets, or stopping rules.
-
-Each handoff will include the relevant checkpoint or patch, source-model identifier, preprocessing configuration, patch size and objective, transformation settings, random seed, and optimization budget. This allows results from different members to be compared and reproduced.
-
-## 4. What are the risks?
-
-| Risk | Planned response |
-|---|---|
-| Small patches or targeted transfer achieve low ASR | Verify gradients and loss direction on a pilot; compare with occlusion controls; diagnose optimization on validation data; report failures alongside successful cases. |
-| Ensemble gains come mainly from additional computation | Report both fixed-step and matched-time comparisons with the same data and transformation settings. |
-| A defense appears robust because the attack is poorly optimized | Optimize through the defense, account for randomness, and check stronger attack budgets and independent restarts. |
-| Classifier training and experiment sweeps exceed available resources | Benchmark early, reuse frozen models, batch evaluation, and prioritize the full basic matrix and the two defined extensions over additional ablations. |
-| Evaluation choices produce misleading comparisons | Share metric code, record ASR denominators, preserve full-test accuracy, and keep test data out of configuration selection. |
-
-The experiments will use public CIFAR-10 images and models controlled by the team. We will collect no new personal data, attribute reused code and methods, and limit conclusions to this digital benchmark.
-
-## 5. How long will it take, and what resources are needed?
-
-We plan approximately seven weeks of implementation, experimentation, and analysis, followed by final presentation and report preparation.
-
-| Dates, 2026 | Milestone |
-|---|---|
-| **Oct. 19-26** | Register the group by Oct. 20; select the course budget split by Oct. 23; agree on interfaces and splits; run initial feasibility checks; submit the proposal by Oct. 26, 11:59 p.m. |
-| **Oct. 27-Nov. 8** | Complete classifier baselines and the main patch implementation; run the basic attack and transfer matrix. |
-| **Nov. 9-16** | Obtain initial ensemble and defense results; prepare the optional Nov. 16 TA check-in. |
-| **Nov. 17-29** | Complete adaptive attacks, budget-matched comparisons, core repeats, and attack-strength checks. |
-| **Nov. 30-Dec. 8** | Audit results, finalize figures, prepare the poster and report, and rehearse the presentation. |
-| **Dec. 9** | Attend the in-person poster session, 1:00-4:00 p.m. Eastern Time. |
-| **Dec. 10-11** | Incorporate feedback and submit the final report by Dec. 11, 11:59 p.m. Eastern Time. |
-
-The project requires accelerator access for training three small classifiers and optimizing patches, plus storage for datasets, checkpoints, and logs. We will prioritize compute in the course's available budget of up to $250 per group; the experiments do not require paid generative-model API calls. We will validate the training stack on the course TPU environment and estimate total runtime and spending from pilots rather than assume a hardware-specific cost in advance.
-
-## 6. What are the final "exams" for success?
-
-The project will be successful if we can deliver reproducible evidence addressing all three research questions, including negative findings where appropriate. Specifically, we will provide:
-
-1. **Complete basic experiments:** four patch sizes, untargeted attacks, all ten targeted classes, learned-patch visualizations, and cross-model transfer results.
-2. **A controlled ensemble study:** single-source and ensemble comparisons on a held-out architecture, including measured computational cost.
-3. **An adaptive defense study:** clean-performance costs, existing-patch results, and attacks optimized against each defended pipeline.
-4. **Reproducibility materials:** model and patch artifacts, configurations, seeds, raw metrics, and documented training and evaluation commands.
-5. **Course deliverables:** a printed and PDF poster, a presentation involving all four members, and a final technical report within the course's page limit, with supplementary material as needed.
-
-We expect to produce patch-size curves, target-class heatmaps, transfer tables, and defense comparisons that explain when attacks work and when apparent improvements disappear under stronger evaluation. Success will be judged by experimental completeness and supported conclusions, rather than by requiring a particular ASR or a guaranteed improvement from either extension.
-
-## AI Assistance Disclosure
-
-A generative AI assistant was used to discuss project scope, suggest the two extensions and division of responsibilities, and draft and organize this proposal. The team will independently review the proposed methods, references, and wording before submission. Any subsequent AI assistance with code, analysis, or writing will be documented in the final report, together with the team's verification procedures. This proposal describes planned work and makes no claim of completed experiments or preliminary results.
-
-## References
-
-1. Tom B. Brown, Dandelion Mané, Aurko Roy, Martín Abadi, and Justin Gilmer. **Adversarial Patch.** arXiv:1712.09665, 2017. [Paper](https://arxiv.org/abs/1712.09665).
-2. Anish Athalye, Nicholas Carlini, and David Wagner. **Obfuscated Gradients Give a False Sense of Security: Circumventing Defenses to Adversarial Examples.** ICML, 2018. [Paper](https://arxiv.org/abs/1802.00420).
-3. Alex Krizhevsky. **Learning Multiple Layers of Features from Tiny Images.** Technical report, 2009. [CIFAR-10 dataset and report](https://cave.cs.toronto.edu/kriz/cifar.html).
+C's ensemble optimization and D's adaptive optimization do not require B's full sweep. Each handoff includes model and patch files, preprocessing, objective, size, transformations, seed, and optimization budget. Final measurements use fixed settings; DenseNet attack results do not guide method selection.
