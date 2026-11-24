@@ -1,0 +1,3422 @@
+{
+  "models": [
+    {
+      "name": "resnet20",
+      "parameters": 269722,
+      "best_epoch": 188,
+      "best_validation_accuracy": 0.9278,
+      "checkpoint_sha256": "88c98d6ce875673806386527c75ae17e8ffd795c00413155c360468812f3dacc"
+    },
+    {
+      "name": "vgg11_bn_cifar",
+      "parameters": 9756426,
+      "best_epoch": 198,
+      "best_validation_accuracy": 0.9238,
+      "checkpoint_sha256": "2d68f337912f570179fdba4b8a9f65787e7ce72a770cc72b752afb95f5600e0a"
+    },
+    {
+      "name": "densenet_bc40_k12",
+      "parameters": 176122,
+      "best_epoch": 188,
+      "best_validation_accuracy": 0.9256,
+      "checkpoint_sha256": "6c7e8c3b90188a6ea44de160c9407d4adce50ba4be1997b209603e229ca9ff51"
+    }
+  ],
+  "cases": [
+    {
+      "image_id": "test:0",
+      "true_label": 3,
+      "pred_clean": 3,
+      "pred_patch": 3,
+      "eligible": false,
+      "targeted_success": false,
+      "transform": {
+        "angle": 0.008015295557098045,
+        "scale": 0.9577476587913901,
+        "cx": 26.0,
+        "cy": 16.0
+      }
+    },
+    {
+      "image_id": "test:1",
+      "true_label": 8,
+      "pred_clean": 8,
+      "pred_patch": 8,
+      "eligible": true,
+      "targeted_success": false,
+      "transform": {
+        "angle": 0.17662490125902264,
+        "scale": 1.0883481730266003,
+        "cx": 6.0,
+        "cy": 21.0
+      }
+    },
+    {
+      "image_id": "test:2",
+      "true_label": 8,
+      "pred_clean": 8,
+      "pred_patch": 8,
+      "eligible": true,
+      "targeted_success": false,
+      "transform": {
+        "angle": 0.1501381842650965,
+        "scale": 0.932156632657385,
+        "cx": 11.0,
+        "cy": 16.0
+      }
+    },
+    {
+      "image_id": "test:3",
+      "true_label": 0,
+      "pred_clean": 0,
+      "pred_patch": 0,
+      "eligible": true,
+      "targeted_success": false,
+      "transform": {
+        "angle": 0.13719576086812754,
+        "scale": 1.0212860147714882,
+        "cx": 12.0,
+        "cy": 26.0
+      }
+    },
+    {
+      "image_id": "test:4",
+      "true_label": 6,
+      "pred_clean": 6,
+      "pred_patch": 6,
+      "eligible": true,
+      "targeted_success": false,
+      "transform": {
+        "angle": -0.12236571541095745,
+        "scale": 1.0591467441337077,
+        "cx": 13.0,
+        "cy": 26.0
+      }
+    },
+    {
+      "image_id": "test:5",
+      "true_label": 6,
+      "pred_clean": 6,
+      "pred_patch": 3,
+      "eligible": true,
+      "targeted_success": true,
+      "transform": {
+        "angle": -0.21288156635963779,
+        "scale": 0.9651513067325231,
+        "cx": 15.0,
+        "cy": 24.0
+      }
+    },
+    {
+      "image_id": "test:6",
+      "true_label": 1,
+      "pred_clean": 1,
+      "pred_patch": 1,
+      "eligible": true,
+      "targeted_success": false,
+      "transform": {
+        "angle": -0.053729031707999086,
+        "scale": 1.085557568176994,
+        "cx": 21.0,
+        "cy": 25.0
+      }
+    },
+    {
+      "image_id": "test:7",
+      "true_label": 6,
+      "pred_clean": 6,
+      "pred_patch": 3,
+      "eligible": true,
+      "targeted_success": true,
+      "transform": {
+        "angle": 0.19925123079986362,
+        "scale": 1.0538917148240492,
+        "cx": 5.0,
+        "cy": 11.0
+      }
+    },
+    {
+      "image_id": "test:8",
+      "true_label": 3,
+      "pred_clean": 3,
+      "pred_patch": 3,
+      "eligible": false,
+      "targeted_success": false,
+      "transform": {
+        "angle": -0.07516689238290945,
+        "scale": 1.0359709420251526,
+        "cx": 12.0,
+        "cy": 6.0
+      }
+    },
+    {
+      "image_id": "test:9",
+      "true_label": 1,
+      "pred_clean": 1,
+      "pred_patch": 1,
+      "eligible": true,
+      "targeted_success": false,
+      "transform": {
+        "angle": 0.18709296523412905,
+        "scale": 1.0551692889520075,
+        "cx": 21.0,
+        "cy": 25.0
+      }
+    },
+    {
+      "image_id": "test:10",
+      "true_label": 0,
+      "pred_clean": 0,
+      "pred_patch": 3,
+      "eligible": true,
+      "targeted_success": true,
+      "transform": {
+        "angle": -0.009149086827894505,
+        "scale": 0.9385396836702411,
+        "cx": 27.0,
+        "cy": 4.0
+      }
+    },
+    {
+      "image_id": "test:11",
+      "true_label": 9,
+      "pred_clean": 9,
+      "pred_patch": 9,
+      "eligible": true,
+      "targeted_success": false,
+      "transform": {
+        "angle": -0.21600625609021687,
+        "scale": 1.07558474859412,
+        "cx": 14.0,
+        "cy": 18.0
+      }
+    }
+  ],
+  "qualitative_spec": {
+    "selection_rule": "First twelve official test IDs in their original order; fixed before final test evaluation. No selection by success.",
+    "image_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "main_report_image_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "patch_run_id": "basic__R__s7__t3__seed101__k1",
+    "eval_model": "resnet20",
+    "draw_id": 0,
+    "eval_seed": 6610,
+    "training_defense_illustration_image": 0
+  },
+  "defenses": [
+    {
+      "type": "gaussian",
+      "sigma": 0.5
+    },
+    {
+      "type": "resize_pad",
+      "sizes": [
+        30,
+        31,
+        32
+      ]
+    }
+  ],
+  "representative_history": [
+    {
+      "step": 0,
+      "asr": 0.027348394768133173,
+      "training_time": 0.0
+    },
+    {
+      "step": 100,
+      "asr": 0.4472354340071344,
+      "training_time": 0.9077726991381496,
+      "loss": 2.8912906646728516,
+      "gradient_norm": 1.0092380046844482
+    },
+    {
+      "step": 200,
+      "asr": 0.45466706302021404,
+      "training_time": 1.8057061983272433,
+      "loss": 3.0666019916534424,
+      "gradient_norm": 0.7543351054191589
+    },
+    {
+      "step": 300,
+      "asr": 0.45630202140309156,
+      "training_time": 2.7009889980545267,
+      "loss": 2.8421874046325684,
+      "gradient_norm": 0.7600482106208801
+    },
+    {
+      "step": 400,
+      "asr": 0.460166468489893,
+      "training_time": 3.585247297771275,
+      "loss": 3.0198135375976562,
+      "gradient_norm": 1.1005111932754517
+    },
+    {
+      "step": 500,
+      "asr": 0.4598692033293698,
+      "training_time": 4.478038097266108,
+      "loss": 2.8965682983398438,
+      "gradient_norm": 1.048248291015625
+    },
+    {
+      "step": 600,
+      "asr": 0.46165279429250894,
+      "training_time": 5.378289096057415,
+      "loss": 2.573666572570801,
+      "gradient_norm": 0.9282420873641968
+    },
+    {
+      "step": 700,
+      "asr": 0.4644768133174792,
+      "training_time": 6.280770895653404,
+      "loss": 2.190035343170166,
+      "gradient_norm": 0.7404582500457764
+    },
+    {
+      "step": 800,
+      "asr": 0.46076099881093935,
+      "training_time": 7.18456039566081,
+      "loss": 1.7619109153747559,
+      "gradient_norm": 0.6005555391311646
+    },
+    {
+      "step": 900,
+      "asr": 0.46105826397146255,
+      "training_time": 8.101434195879847,
+      "loss": 2.121469497680664,
+      "gradient_norm": 0.6789127588272095
+    },
+    {
+      "step": 1000,
+      "asr": 0.4643281807372176,
+      "training_time": 8.984325597411953,
+      "loss": 2.8529906272888184,
+      "gradient_norm": 0.84316086769104
+    }
+  ],
+  "illustration": {
+    "split": "official training",
+    "image_id": 0,
+    "q": 30,
+    "padding_top": 1,
+    "padding_left": 1
+  },
+  "patch_characteristics": [
+    {
+      "run_id": "basic__R__s3__tNone__seed101__k1",
+      "size": 3,
+      "target": null,
+      "seed": 101,
+      "total_variation": 1.1202467679977417,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4518444240093231,
+        0.3796563744544983,
+        0.5819970369338989
+      ],
+      "patch_sha256": "45ecfbaba5e017e0dff0e989df0b8334cb0ef51c4e8e514e6d604ec120db4b75"
+    },
+    {
+      "run_id": "basic__R__s3__tNone__seed102__k1",
+      "size": 3,
+      "target": null,
+      "seed": 102,
+      "total_variation": 1.1082942485809326,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.3393000662326813,
+        0.3425885736942291,
+        0.5512028932571411
+      ],
+      "patch_sha256": "1140e96d95bd8e4af6b9e1c5e2508949c924cb31f5b19f015f6f362bfcd67946"
+    },
+    {
+      "run_id": "basic__R__s3__tNone__seed103__k1",
+      "size": 3,
+      "target": null,
+      "seed": 103,
+      "total_variation": 1.0320258140563965,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5505621433258057,
+        0.4444444477558136,
+        0.5555555820465088
+      ],
+      "patch_sha256": "e1f0b755437481b18b8aa6a89e9ae66a0ac0021fccbe1a061760195c408db795"
+    },
+    {
+      "run_id": "basic__R__s3__t0__seed101__k1",
+      "size": 3,
+      "target": 0,
+      "seed": 101,
+      "total_variation": 1.2087308168411255,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5008009076118469,
+        0.4088650941848755,
+        0.600314736366272
+      ],
+      "patch_sha256": "2f67bda36e622783c4a583047e2302e66fe2747c92722acb4ceb1519414a3238"
+    },
+    {
+      "run_id": "basic__R__s3__t0__seed102__k1",
+      "size": 3,
+      "target": 0,
+      "seed": 102,
+      "total_variation": 0.9883065223693848,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.47038471698760986,
+        0.41432249546051025,
+        0.6666666865348816
+      ],
+      "patch_sha256": "357c9d67701eeb15d36262377b691ec029e600a7db9e2aa5533f7c3bb4d43b30"
+    },
+    {
+      "run_id": "basic__R__s3__t0__seed103__k1",
+      "size": 3,
+      "target": 0,
+      "seed": 103,
+      "total_variation": 1.2010393142700195,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6635611057281494,
+        0.428553968667984,
+        0.4492913782596588
+      ],
+      "patch_sha256": "ec0840dcdecc2ba1fdedac47cb13aeaf89477b52894674d1c4c5aae6ef56de50"
+    },
+    {
+      "run_id": "basic__R__s3__t1__seed101__k1",
+      "size": 3,
+      "target": 1,
+      "seed": 101,
+      "total_variation": 1.4532358646392822,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.397142618894577,
+        0.5378883481025696,
+        0.6768324971199036
+      ],
+      "patch_sha256": "c33a6a83c48d0b824f66dececf75922268f64f005f986cdf115d3f2cb2fcb023"
+    },
+    {
+      "run_id": "basic__R__s3__t1__seed102__k1",
+      "size": 3,
+      "target": 1,
+      "seed": 102,
+      "total_variation": 1.5634655952453613,
+      "high_frequency_energy_fraction": 0.9999999403953552,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.3673713505268097,
+        0.31095725297927856,
+        0.5536795854568481
+      ],
+      "patch_sha256": "d457744bf688581624a10a58413e7735182f8e3aab3f06ef6a7d30aaed5552e9"
+    },
+    {
+      "run_id": "basic__R__s3__t1__seed103__k1",
+      "size": 3,
+      "target": 1,
+      "seed": 103,
+      "total_variation": 0.9434021711349487,
+      "high_frequency_energy_fraction": 0.9999999403953552,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4444444477558136,
+        0.2222222238779068,
+        0.6677089333534241
+      ],
+      "patch_sha256": "337d393219abd01c2e278365f66933b0a6889e530f2acaa4f329fa8733cd227a"
+    },
+    {
+      "run_id": "basic__R__s3__t2__seed101__k1",
+      "size": 3,
+      "target": 2,
+      "seed": 101,
+      "total_variation": 1.236194372177124,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5118868350982666,
+        0.2762875556945801,
+        0.5915107727050781
+      ],
+      "patch_sha256": "22a1ec8d2f53db0f4b00fd880c661a1282dd11f4fadee5b38be3bd6a117edcaa"
+    },
+    {
+      "run_id": "basic__R__s3__t2__seed102__k1",
+      "size": 3,
+      "target": 2,
+      "seed": 102,
+      "total_variation": 0.927939772605896,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4624878466129303,
+        0.367230087518692,
+        0.6990246176719666
+      ],
+      "patch_sha256": "3efc9e0bfc1221581f968058672665c7a1e59960de6aeeae51f15cd4fc5fed66"
+    },
+    {
+      "run_id": "basic__R__s3__t2__seed103__k1",
+      "size": 3,
+      "target": 2,
+      "seed": 103,
+      "total_variation": 0.9287017583847046,
+      "high_frequency_energy_fraction": 1.0000001192092896,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4649342894554138,
+        0.37470829486846924,
+        0.7032943964004517
+      ],
+      "patch_sha256": "50655b8a0fb3143dc626b88dc5154f55c14407cef58c7323aacf44982f275511"
+    },
+    {
+      "run_id": "basic__R__s3__t3__seed101__k1",
+      "size": 3,
+      "target": 3,
+      "seed": 101,
+      "total_variation": 1.4862399101257324,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5728402137756348,
+        0.4005078077316284,
+        0.2970541715621948
+      ],
+      "patch_sha256": "bfc7fd8901efbeb8c50847329adcba3d468cfd45b0958246102e180e05d6054f"
+    },
+    {
+      "run_id": "basic__R__s3__t3__seed102__k1",
+      "size": 3,
+      "target": 3,
+      "seed": 102,
+      "total_variation": 1.5572690963745117,
+      "high_frequency_energy_fraction": 0.9999998211860657,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5461105704307556,
+        0.48415735363960266,
+        0.39347273111343384
+      ],
+      "patch_sha256": "522abbd72ee97627476b2f687d75aed69a3c242d6e1fd9b6e5b8f02100a6b512"
+    },
+    {
+      "run_id": "basic__R__s3__t3__seed103__k1",
+      "size": 3,
+      "target": 3,
+      "seed": 103,
+      "total_variation": 1.2205822467803955,
+      "high_frequency_energy_fraction": 0.9999999403953552,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6442875266075134,
+        0.4275693893432617,
+        0.3874354660511017
+      ],
+      "patch_sha256": "c46c118cc9bfc119956c554b2231053d107784064af69a63c848f54dbfd5bb21"
+    },
+    {
+      "run_id": "basic__R__s3__t4__seed101__k1",
+      "size": 3,
+      "target": 4,
+      "seed": 101,
+      "total_variation": 1.0574798583984375,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.37964123487472534,
+        0.6192652583122253,
+        0.714599072933197
+      ],
+      "patch_sha256": "c707c5aa23c1a19eeec1ae3227f84f9612bafb96cab6e40c8c5df64afbd557aa"
+    },
+    {
+      "run_id": "basic__R__s3__t4__seed102__k1",
+      "size": 3,
+      "target": 4,
+      "seed": 102,
+      "total_variation": 1.0244944095611572,
+      "high_frequency_energy_fraction": 1.0000001192092896,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.488777220249176,
+        0.2864757478237152,
+        0.3224998712539673
+      ],
+      "patch_sha256": "e66aa98a25f3816d749f74fa031fc7b8f2ba9103f41f808afcf16426b5a81137"
+    },
+    {
+      "run_id": "basic__R__s3__t4__seed103__k1",
+      "size": 3,
+      "target": 4,
+      "seed": 103,
+      "total_variation": 0.9385977983474731,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.32264015078544617,
+        0.3060700297355652,
+        0.366666316986084
+      ],
+      "patch_sha256": "22a44dcb6a47d66f2b4c2d8c83f181b17aba4d258b9da59f945d32257b468fad"
+    },
+    {
+      "run_id": "basic__R__s3__t5__seed101__k1",
+      "size": 3,
+      "target": 5,
+      "seed": 101,
+      "total_variation": 1.0843334197998047,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4278058409690857,
+        0.38609614968299866,
+        0.6247289776802063
+      ],
+      "patch_sha256": "047e696d954d4782f73856e2db7c7bdd3de46d2dc2eff4c93eb6a7addc1cdb1b"
+    },
+    {
+      "run_id": "basic__R__s3__t5__seed102__k1",
+      "size": 3,
+      "target": 5,
+      "seed": 102,
+      "total_variation": 0.9797263145446777,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5599765181541443,
+        0.33932819962501526,
+        0.3326483368873596
+      ],
+      "patch_sha256": "8c90531ca2dad4d76124a30c484232f1b4d310edb7f479d6a705fa2da401d2d2"
+    },
+    {
+      "run_id": "basic__R__s3__t5__seed103__k1",
+      "size": 3,
+      "target": 5,
+      "seed": 103,
+      "total_variation": 1.0785248279571533,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6970880627632141,
+        0.5158290863037109,
+        0.448030948638916
+      ],
+      "patch_sha256": "40a9f7f8801d1e007e8125d2fbcb24bd8312721988802d472af0bbb436582a89"
+    },
+    {
+      "run_id": "basic__R__s3__t6__seed101__k1",
+      "size": 3,
+      "target": 6,
+      "seed": 101,
+      "total_variation": 0.933160662651062,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.44556924700737,
+        0.7777777910232544,
+        0.050284404307603836
+      ],
+      "patch_sha256": "17547f98aa7cd1ee6f47c4eee7d2a1a44180c384eae95418cc536db9599fb098"
+    },
+    {
+      "run_id": "basic__R__s3__t6__seed102__k1",
+      "size": 3,
+      "target": 6,
+      "seed": 102,
+      "total_variation": 0.9774540662765503,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5496370792388916,
+        0.2657518982887268,
+        0.26847043633461
+      ],
+      "patch_sha256": "2aad54775a6d1ade1e70fe71db4916ea7609a4c1d7b3f2ec4aae48fa54e8c85b"
+    },
+    {
+      "run_id": "basic__R__s3__t6__seed103__k1",
+      "size": 3,
+      "target": 6,
+      "seed": 103,
+      "total_variation": 0.7868609428405762,
+      "high_frequency_energy_fraction": 0.9999998807907104,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5062590837478638,
+        0.741298258304596,
+        0.2351975440979004
+      ],
+      "patch_sha256": "523581c0e5d78838143f85ecfcce403e21d03e97355409ac2f5d93bab2460eba"
+    },
+    {
+      "run_id": "basic__R__s3__t7__seed101__k1",
+      "size": 3,
+      "target": 7,
+      "seed": 101,
+      "total_variation": 1.1449053287506104,
+      "high_frequency_energy_fraction": 0.9999999403953552,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.33380284905433655,
+        0.5524110198020935,
+        0.6923431754112244
+      ],
+      "patch_sha256": "fc5f12d959e7e627b4e9dd13f3b93c917967ebf37f87a902a79570c50ad01e61"
+    },
+    {
+      "run_id": "basic__R__s3__t7__seed102__k1",
+      "size": 3,
+      "target": 7,
+      "seed": 102,
+      "total_variation": 1.4141576290130615,
+      "high_frequency_energy_fraction": 1.0000001192092896,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4444444477558136,
+        0.35860204696655273,
+        0.5555555820465088
+      ],
+      "patch_sha256": "c4e1e01cd052bd56e018a90204e30fd4e1913aa630b4be2524174c2b5e47a55e"
+    },
+    {
+      "run_id": "basic__R__s3__t7__seed103__k1",
+      "size": 3,
+      "target": 7,
+      "seed": 103,
+      "total_variation": 1.091814398765564,
+      "high_frequency_energy_fraction": 1.0000001192092896,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4444444477558136,
+        0.3429676592350006,
+        0.5624958872795105
+      ],
+      "patch_sha256": "3d32ca74f62e330c8ff7a2c02a31377e8acaf60709827091356534f6b8d00221"
+    },
+    {
+      "run_id": "basic__R__s3__t8__seed101__k1",
+      "size": 3,
+      "target": 8,
+      "seed": 101,
+      "total_variation": 1.205134630203247,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.662881076335907,
+        0.5958271622657776,
+        0.6280502080917358
+      ],
+      "patch_sha256": "5438d3ec71448c996e51f6e95180995afc744c65b3d15ae429eff570526b26c0"
+    },
+    {
+      "run_id": "basic__R__s3__t8__seed102__k1",
+      "size": 3,
+      "target": 8,
+      "seed": 102,
+      "total_variation": 0.7035166025161743,
+      "high_frequency_energy_fraction": 1.0000001192092896,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5287250876426697,
+        0.3901236951351166,
+        0.537050187587738
+      ],
+      "patch_sha256": "839b700d97d8d7e99ed2c0805a94658b9654f364542fda07fd4591944982d33b"
+    },
+    {
+      "run_id": "basic__R__s3__t8__seed103__k1",
+      "size": 3,
+      "target": 8,
+      "seed": 103,
+      "total_variation": 1.052654504776001,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6349664330482483,
+        0.469808429479599,
+        0.4379003345966339
+      ],
+      "patch_sha256": "d4307477ab679b3d368488ad3e54597dfa36e5df7f9f5acdcdecba0fccf35b5e"
+    },
+    {
+      "run_id": "basic__R__s3__t9__seed101__k1",
+      "size": 3,
+      "target": 9,
+      "seed": 101,
+      "total_variation": 0.6163548231124878,
+      "high_frequency_energy_fraction": 1.0000001192092896,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6181817054748535,
+        0.572020411491394,
+        0.5657997131347656
+      ],
+      "patch_sha256": "273b2445fc3519aa191db51b4fa7294a2dc43c10698aacd7a093430f3a79c826"
+    },
+    {
+      "run_id": "basic__R__s3__t9__seed102__k1",
+      "size": 3,
+      "target": 9,
+      "seed": 102,
+      "total_variation": 0.9684231281280518,
+      "high_frequency_energy_fraction": 1.0,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.23193004727363586,
+        0.2700330317020416,
+        0.4068640172481537
+      ],
+      "patch_sha256": "c5e48aeaf947329f2ffd165b946ce7f6dad74c0bfaa67c15d069d040c49c2921"
+    },
+    {
+      "run_id": "basic__R__s3__t9__seed103__k1",
+      "size": 3,
+      "target": 9,
+      "seed": 103,
+      "total_variation": 1.209287166595459,
+      "high_frequency_energy_fraction": 1.0000001192092896,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.42412540316581726,
+        0.5247151851654053,
+        0.5987684726715088
+      ],
+      "patch_sha256": "f0780d4932a7651abbf5c24ba329dcd6d975723b2ad6833a1f2afa50a6d55133"
+    },
+    {
+      "run_id": "basic__R__s5__tNone__seed101__k1",
+      "size": 5,
+      "target": null,
+      "seed": 101,
+      "total_variation": 1.045772910118103,
+      "high_frequency_energy_fraction": 0.8333864808082581,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5096879005432129,
+        0.45541641116142273,
+        0.6196275353431702
+      ],
+      "patch_sha256": "c5981d6d5187b38b0687df9d7a0df68d3e91d6ab5bce5cab87d5ec0bcb2c5a9a"
+    },
+    {
+      "run_id": "basic__R__s5__tNone__seed102__k1",
+      "size": 5,
+      "target": null,
+      "seed": 102,
+      "total_variation": 0.9774671196937561,
+      "high_frequency_energy_fraction": 0.9446032047271729,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.345957487821579,
+        0.45514634251594543,
+        0.7288019061088562
+      ],
+      "patch_sha256": "f0c11c27bef4818a6c7441cf40ac27d8ea924e242a785263447b960d39e092e5"
+    },
+    {
+      "run_id": "basic__R__s5__tNone__seed103__k1",
+      "size": 5,
+      "target": null,
+      "seed": 103,
+      "total_variation": 1.0476863384246826,
+      "high_frequency_energy_fraction": 0.7786181569099426,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4854212701320648,
+        0.38275864720344543,
+        0.5396118760108948
+      ],
+      "patch_sha256": "35b79c0d0178272dff867aeb5f7afae0f95baa994d4173db8d314d00d76108a9"
+    },
+    {
+      "run_id": "basic__R__s5__t0__seed101__k1",
+      "size": 5,
+      "target": 0,
+      "seed": 101,
+      "total_variation": 0.8783349990844727,
+      "high_frequency_energy_fraction": 0.6897892355918884,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6252152919769287,
+        0.3560650646686554,
+        0.5437108874320984
+      ],
+      "patch_sha256": "2b389e1b01a67466d593964fa04a7e1f6dea772f53e627beaecd4927b01603cf"
+    },
+    {
+      "run_id": "basic__R__s5__t0__seed102__k1",
+      "size": 5,
+      "target": 0,
+      "seed": 102,
+      "total_variation": 0.9768632650375366,
+      "high_frequency_energy_fraction": 0.7263157963752747,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4449434280395508,
+        0.4034474492073059,
+        0.6098042726516724
+      ],
+      "patch_sha256": "1dbf660ff950e18b6dfd488631369e64d9f1035d80a67b9b780d7d103d266279"
+    },
+    {
+      "run_id": "basic__R__s5__t0__seed103__k1",
+      "size": 5,
+      "target": 0,
+      "seed": 103,
+      "total_variation": 1.0157215595245361,
+      "high_frequency_energy_fraction": 0.8917630910873413,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4915753901004791,
+        0.4694805145263672,
+        0.5076907873153687
+      ],
+      "patch_sha256": "037ef128fd91e62b029f3d985a54dfb7b08b15c4fb4834a0ed50905f66a78699"
+    },
+    {
+      "run_id": "basic__R__s5__t1__seed101__k1",
+      "size": 5,
+      "target": 1,
+      "seed": 101,
+      "total_variation": 0.9251798391342163,
+      "high_frequency_energy_fraction": 0.8602763414382935,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.703798234462738,
+        0.3682613670825958,
+        0.4296533167362213
+      ],
+      "patch_sha256": "27454aba04f656621d0b921b25edde17a7eb4d6cd3b6916a7ffdc72608de8b88"
+    },
+    {
+      "run_id": "basic__R__s5__t1__seed102__k1",
+      "size": 5,
+      "target": 1,
+      "seed": 102,
+      "total_variation": 0.9570468664169312,
+      "high_frequency_energy_fraction": 0.8554376363754272,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4742937386035919,
+        0.41685187816619873,
+        0.4672551453113556
+      ],
+      "patch_sha256": "c169ccc12444abab23c63c15a77fccc158ca222f1931c10df17998f9b2a71090"
+    },
+    {
+      "run_id": "basic__R__s5__t1__seed103__k1",
+      "size": 5,
+      "target": 1,
+      "seed": 103,
+      "total_variation": 1.060468316078186,
+      "high_frequency_energy_fraction": 0.90302574634552,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5008437037467957,
+        0.3822588324546814,
+        0.3938215672969818
+      ],
+      "patch_sha256": "5b64578b593d990d6990c2edbf082ba19326c6366c78e2e9f14524facee58edc"
+    },
+    {
+      "run_id": "basic__R__s5__t2__seed101__k1",
+      "size": 5,
+      "target": 2,
+      "seed": 101,
+      "total_variation": 1.0592005252838135,
+      "high_frequency_energy_fraction": 0.7489362359046936,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5482715964317322,
+        0.3591182231903076,
+        0.4807361960411072
+      ],
+      "patch_sha256": "e4ace6af4835dc6ac73715218831e881bf2a2b50808036db7b29e7713db62049"
+    },
+    {
+      "run_id": "basic__R__s5__t2__seed102__k1",
+      "size": 5,
+      "target": 2,
+      "seed": 102,
+      "total_variation": 1.035740613937378,
+      "high_frequency_energy_fraction": 0.8913261890411377,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.38200533390045166,
+        0.4879513680934906,
+        0.6804926991462708
+      ],
+      "patch_sha256": "7bf6fc705a193ed826f9f45e82371062179f8f7d61112c41e7270e6782483355"
+    },
+    {
+      "run_id": "basic__R__s5__t2__seed103__k1",
+      "size": 5,
+      "target": 2,
+      "seed": 103,
+      "total_variation": 1.0410789251327515,
+      "high_frequency_energy_fraction": 0.7543484568595886,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.42590779066085815,
+        0.39150696992874146,
+        0.45042961835861206
+      ],
+      "patch_sha256": "332b77ad84a84cb0ded2364eb260e0d9c9ffb64d326543fff5db0923afa4fda0"
+    },
+    {
+      "run_id": "basic__R__s5__t3__seed101__k1",
+      "size": 5,
+      "target": 3,
+      "seed": 101,
+      "total_variation": 0.8980350494384766,
+      "high_frequency_energy_fraction": 0.7989457249641418,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.7282739877700806,
+        0.6233034729957581,
+        0.6025640964508057
+      ],
+      "patch_sha256": "2ef5894e8b7c7769b694f3ec93610c979ed6dab197930a14b81f664ff8a4392b"
+    },
+    {
+      "run_id": "basic__R__s5__t3__seed102__k1",
+      "size": 5,
+      "target": 3,
+      "seed": 102,
+      "total_variation": 0.897217333316803,
+      "high_frequency_energy_fraction": 0.817378044128418,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.7521911859512329,
+        0.6057079434394836,
+        0.5202513933181763
+      ],
+      "patch_sha256": "80964b5636bd253524eebe8fb201f86f6d1a8963908a851d82626025c8573adf"
+    },
+    {
+      "run_id": "basic__R__s5__t3__seed103__k1",
+      "size": 5,
+      "target": 3,
+      "seed": 103,
+      "total_variation": 0.9275963306427002,
+      "high_frequency_energy_fraction": 0.8215754628181458,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.7292006015777588,
+        0.5763965845108032,
+        0.510423481464386
+      ],
+      "patch_sha256": "dcf47312dd6729b5275f84e20ea7c7842ef24d5d81cff0b059007f2ff5827eb7"
+    },
+    {
+      "run_id": "basic__R__s5__t4__seed101__k1",
+      "size": 5,
+      "target": 4,
+      "seed": 101,
+      "total_variation": 0.8372820019721985,
+      "high_frequency_energy_fraction": 0.8750731348991394,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6458039283752441,
+        0.49929875135421753,
+        0.43152615427970886
+      ],
+      "patch_sha256": "176b77e860c74167277327d8026fdf50829667d62d33b3b97a0f10c38b8eb0df"
+    },
+    {
+      "run_id": "basic__R__s5__t4__seed102__k1",
+      "size": 5,
+      "target": 4,
+      "seed": 102,
+      "total_variation": 0.8399357795715332,
+      "high_frequency_energy_fraction": 0.8073536157608032,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6368524432182312,
+        0.48579150438308716,
+        0.2940193712711334
+      ],
+      "patch_sha256": "5754f755fa25d36ade60dcb84888e56bafe58278c6f498e4c25d3df698bfa981"
+    },
+    {
+      "run_id": "basic__R__s5__t4__seed103__k1",
+      "size": 5,
+      "target": 4,
+      "seed": 103,
+      "total_variation": 0.9464660286903381,
+      "high_frequency_energy_fraction": 0.9167041182518005,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.584168016910553,
+        0.4756336510181427,
+        0.3835083842277527
+      ],
+      "patch_sha256": "59ac41c9e9d1b50262e37af1e1775715f1bd2c07e6f823a0bd804601d1a5eb09"
+    },
+    {
+      "run_id": "basic__R__s5__t5__seed101__k1",
+      "size": 5,
+      "target": 5,
+      "seed": 101,
+      "total_variation": 0.9711855053901672,
+      "high_frequency_energy_fraction": 0.7916572093963623,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.643807053565979,
+        0.29658445715904236,
+        0.5628288984298706
+      ],
+      "patch_sha256": "0d3457844e587103ea9331df5ee690da7bb160c66dbdf4f79ced52e5b44d7f52"
+    },
+    {
+      "run_id": "basic__R__s5__t5__seed102__k1",
+      "size": 5,
+      "target": 5,
+      "seed": 102,
+      "total_variation": 0.8910421133041382,
+      "high_frequency_energy_fraction": 0.6870446801185608,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5543172955513,
+        0.2684379518032074,
+        0.6138103008270264
+      ],
+      "patch_sha256": "9f88b88c5a06c1c063d8c329264aaa3c1c561e897e9974326152e63071aeb249"
+    },
+    {
+      "run_id": "basic__R__s5__t5__seed103__k1",
+      "size": 5,
+      "target": 5,
+      "seed": 103,
+      "total_variation": 0.8593543767929077,
+      "high_frequency_energy_fraction": 0.9091414213180542,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6561553478240967,
+        0.4604797661304474,
+        0.38080456852912903
+      ],
+      "patch_sha256": "6caeaa96a29ff947765c646e7cce235d1903832ecd87eb47f751834872eb9ef0"
+    },
+    {
+      "run_id": "basic__R__s5__t6__seed101__k1",
+      "size": 5,
+      "target": 6,
+      "seed": 101,
+      "total_variation": 0.7007065415382385,
+      "high_frequency_energy_fraction": 0.738041341304779,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.3720722198486328,
+        0.6055620312690735,
+        0.13872629404067993
+      ],
+      "patch_sha256": "2a2c9ca8209df3545eeeadf1da19f4e2092b68b0b1ee1961a3a3c16c25697868"
+    },
+    {
+      "run_id": "basic__R__s5__t6__seed102__k1",
+      "size": 5,
+      "target": 6,
+      "seed": 102,
+      "total_variation": 0.7075062394142151,
+      "high_frequency_energy_fraction": 0.677984356880188,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5169275999069214,
+        0.6155784130096436,
+        0.22864103317260742
+      ],
+      "patch_sha256": "34e2a9cf5869ace184c7fc9ed22a7bc19c8965a38dccb92dc55c2975e4e55e5e"
+    },
+    {
+      "run_id": "basic__R__s5__t6__seed103__k1",
+      "size": 5,
+      "target": 6,
+      "seed": 103,
+      "total_variation": 0.71233069896698,
+      "high_frequency_energy_fraction": 0.7920355200767517,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.3388734459877014,
+        0.582848310470581,
+        0.1635419726371765
+      ],
+      "patch_sha256": "967d01740d6b05a38595b6ff2e0b0d077a2bb6ebe0b9b91d59f6ae78a6a71072"
+    },
+    {
+      "run_id": "basic__R__s5__t7__seed101__k1",
+      "size": 5,
+      "target": 7,
+      "seed": 101,
+      "total_variation": 1.144809365272522,
+      "high_frequency_energy_fraction": 0.8720198273658752,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4594663381576538,
+        0.3592214584350586,
+        0.4317542016506195
+      ],
+      "patch_sha256": "dee3fb0d8910d478882963ba97e1874fe063c83913c2e799ab2fd1f6a0e35e37"
+    },
+    {
+      "run_id": "basic__R__s5__t7__seed102__k1",
+      "size": 5,
+      "target": 7,
+      "seed": 102,
+      "total_variation": 1.1293034553527832,
+      "high_frequency_energy_fraction": 0.8144533038139343,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.49311381578445435,
+        0.5085304975509644,
+        0.6216535568237305
+      ],
+      "patch_sha256": "69cba7257ff8cecc78a98c9dfadcf1b7d768c73d3ead449cc7b4c2139e726ceb"
+    },
+    {
+      "run_id": "basic__R__s5__t7__seed103__k1",
+      "size": 5,
+      "target": 7,
+      "seed": 103,
+      "total_variation": 1.2230446338653564,
+      "high_frequency_energy_fraction": 0.9272136688232422,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.450033962726593,
+        0.5075494647026062,
+        0.5410125255584717
+      ],
+      "patch_sha256": "a662b29a0cf081739a2792d186c9ee0c6989005501d4fd76f2c322c849074758"
+    },
+    {
+      "run_id": "basic__R__s5__t8__seed101__k1",
+      "size": 5,
+      "target": 8,
+      "seed": 101,
+      "total_variation": 0.8889106512069702,
+      "high_frequency_energy_fraction": 0.8312821984291077,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.7248262166976929,
+        0.5164217948913574,
+        0.34580954909324646
+      ],
+      "patch_sha256": "9042185f15de54526aef0856cc20ee2f8ed72ec11b72169de6ed1ff6bdf00288"
+    },
+    {
+      "run_id": "basic__R__s5__t8__seed102__k1",
+      "size": 5,
+      "target": 8,
+      "seed": 102,
+      "total_variation": 0.9655178189277649,
+      "high_frequency_energy_fraction": 0.875971257686615,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6070897579193115,
+        0.4468100666999817,
+        0.39026615023612976
+      ],
+      "patch_sha256": "d72693625fcfa59f38f8ae6fd965f802310cb08fa482a3d224dc85820527225c"
+    },
+    {
+      "run_id": "basic__R__s5__t8__seed103__k1",
+      "size": 5,
+      "target": 8,
+      "seed": 103,
+      "total_variation": 1.035554051399231,
+      "high_frequency_energy_fraction": 0.8920559883117676,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6984496116638184,
+        0.46806469559669495,
+        0.4678443968296051
+      ],
+      "patch_sha256": "6a97b5d46ccc136c6c0fb9b0814ed9b7a784db0e592d60c894ba7ad8fdc51dfd"
+    },
+    {
+      "run_id": "basic__R__s5__t9__seed101__k1",
+      "size": 5,
+      "target": 9,
+      "seed": 101,
+      "total_variation": 0.6935224533081055,
+      "high_frequency_energy_fraction": 0.7866265773773193,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.47839996218681335,
+        0.18457087874412537,
+        0.1945701241493225
+      ],
+      "patch_sha256": "aabdaaa47e533abe38356060f95d4cbc0bf9d1d947b69ae13075b0cd32b4a169"
+    },
+    {
+      "run_id": "basic__R__s5__t9__seed102__k1",
+      "size": 5,
+      "target": 9,
+      "seed": 102,
+      "total_variation": 0.6816222071647644,
+      "high_frequency_energy_fraction": 0.7681989669799805,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4739799499511719,
+        0.16896668076515198,
+        0.20551688969135284
+      ],
+      "patch_sha256": "cc2053d21b814d21f55a7368c07e93023943c813512430eb45fee1394978f00b"
+    },
+    {
+      "run_id": "basic__R__s5__t9__seed103__k1",
+      "size": 5,
+      "target": 9,
+      "seed": 103,
+      "total_variation": 0.8171840310096741,
+      "high_frequency_energy_fraction": 0.7850829362869263,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6154513955116272,
+        0.3128078579902649,
+        0.2540604770183563
+      ],
+      "patch_sha256": "391263b0b404bbf8d5bf5e371751c4deb3b3a7083456ea69f52db7fb93e30e84"
+    },
+    {
+      "run_id": "basic__R__s7__tNone__seed101__k1",
+      "size": 7,
+      "target": null,
+      "seed": 101,
+      "total_variation": 0.8739807605743408,
+      "high_frequency_energy_fraction": 0.688801109790802,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.47364822030067444,
+        0.4163626432418823,
+        0.4510745108127594
+      ],
+      "patch_sha256": "82f2503272790371558a7682ce52404664e449704c44725ae66b79a6489ab810"
+    },
+    {
+      "run_id": "basic__R__s7__tNone__seed102__k1",
+      "size": 7,
+      "target": null,
+      "seed": 102,
+      "total_variation": 0.8578571677207947,
+      "high_frequency_energy_fraction": 0.5877531170845032,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4559966027736664,
+        0.5531514286994934,
+        0.5166345238685608
+      ],
+      "patch_sha256": "08f2862f4f53cf6e0ff921b534fadfe8069e7068e702208784589d70dc3f04ce"
+    },
+    {
+      "run_id": "basic__R__s7__tNone__seed103__k1",
+      "size": 7,
+      "target": null,
+      "seed": 103,
+      "total_variation": 0.9354416728019714,
+      "high_frequency_energy_fraction": 0.6898485422134399,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.44943857192993164,
+        0.4508054256439209,
+        0.38549578189849854
+      ],
+      "patch_sha256": "4714f4202500a5d84cf8884f73b5ac4af1ceb45a3fdb1eb8533ccd8480468d1b"
+    },
+    {
+      "run_id": "basic__R__s7__t0__seed101__k1",
+      "size": 7,
+      "target": 0,
+      "seed": 101,
+      "total_variation": 0.9246805906295776,
+      "high_frequency_energy_fraction": 0.8534685373306274,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5430896282196045,
+        0.49026376008987427,
+        0.47890764474868774
+      ],
+      "patch_sha256": "82bafabb32b04d6a5bea84aa0fc797d444f4f74f676a26fb4a29e3940c3afabf"
+    },
+    {
+      "run_id": "basic__R__s7__t0__seed102__k1",
+      "size": 7,
+      "target": 0,
+      "seed": 102,
+      "total_variation": 0.8626400232315063,
+      "high_frequency_energy_fraction": 0.7669237852096558,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5521551370620728,
+        0.48448386788368225,
+        0.41888681054115295
+      ],
+      "patch_sha256": "b580d73623d780dfc6e890dda2513e76080c3870a0155b946e13079cb27a63e4"
+    },
+    {
+      "run_id": "basic__R__s7__t0__seed103__k1",
+      "size": 7,
+      "target": 0,
+      "seed": 103,
+      "total_variation": 0.8276801109313965,
+      "high_frequency_energy_fraction": 0.679395854473114,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.48062998056411743,
+        0.5194002389907837,
+        0.5597043633460999
+      ],
+      "patch_sha256": "db81a2a4626b1ff72c039c63e4e4df6019537ea33f78d9e9028a68c0cabfe5f8"
+    },
+    {
+      "run_id": "basic__R__s7__t1__seed101__k1",
+      "size": 7,
+      "target": 1,
+      "seed": 101,
+      "total_variation": 0.8810104727745056,
+      "high_frequency_energy_fraction": 0.6283257603645325,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5676723122596741,
+        0.43997713923454285,
+        0.5609737038612366
+      ],
+      "patch_sha256": "d141780c5423802d485cf6ccce75aa95a8f08930dcd7ce7aa59197e40749ce26"
+    },
+    {
+      "run_id": "basic__R__s7__t1__seed102__k1",
+      "size": 7,
+      "target": 1,
+      "seed": 102,
+      "total_variation": 0.9012616872787476,
+      "high_frequency_energy_fraction": 0.5926235318183899,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5573800802230835,
+        0.47968801856040955,
+        0.5264420509338379
+      ],
+      "patch_sha256": "3e31fdac6308310c0e1fc01c686852ecba790e7d7cabfeaf3154bcf35a6c4979"
+    },
+    {
+      "run_id": "basic__R__s7__t1__seed103__k1",
+      "size": 7,
+      "target": 1,
+      "seed": 103,
+      "total_variation": 0.9630733132362366,
+      "high_frequency_energy_fraction": 0.756584882736206,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5981308817863464,
+        0.36371931433677673,
+        0.4442829191684723
+      ],
+      "patch_sha256": "270b4fde77a36da010ac5e88550e2bb5f1d434c3f579f18a57373723347c21ee"
+    },
+    {
+      "run_id": "basic__R__s7__t2__seed101__k1",
+      "size": 7,
+      "target": 2,
+      "seed": 101,
+      "total_variation": 0.9225675463676453,
+      "high_frequency_energy_fraction": 0.6050224900245667,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.485709547996521,
+        0.4637461006641388,
+        0.38740411400794983
+      ],
+      "patch_sha256": "8bfc07489bd317debefe856ae5216d27d7b7775c1de82d93bed61496728723d6"
+    },
+    {
+      "run_id": "basic__R__s7__t2__seed102__k1",
+      "size": 7,
+      "target": 2,
+      "seed": 102,
+      "total_variation": 0.8719081878662109,
+      "high_frequency_energy_fraction": 0.7245076894760132,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4343431293964386,
+        0.5244361758232117,
+        0.4592937231063843
+      ],
+      "patch_sha256": "00a5ad5c8fadb2db634d2bc5b62f554392405ec9e5bf6983fc481763ff1e0ce5"
+    },
+    {
+      "run_id": "basic__R__s7__t2__seed103__k1",
+      "size": 7,
+      "target": 2,
+      "seed": 103,
+      "total_variation": 0.8669981360435486,
+      "high_frequency_energy_fraction": 0.6586065292358398,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.48811426758766174,
+        0.5060928463935852,
+        0.44978129863739014
+      ],
+      "patch_sha256": "e02eeadcf92a13241afe60306ae4bafad04fc8b8ecf60e302ee7e1cc4e482f30"
+    },
+    {
+      "run_id": "basic__R__s7__t3__seed101__k1",
+      "size": 7,
+      "target": 3,
+      "seed": 101,
+      "total_variation": 0.7373443245887756,
+      "high_frequency_energy_fraction": 0.7389633655548096,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6923192143440247,
+        0.6049476861953735,
+        0.5674319863319397
+      ],
+      "patch_sha256": "0c32ced6a85224a7f67505f29dc7d53441035361f488a9b4785843a643264cc1"
+    },
+    {
+      "run_id": "basic__R__s7__t3__seed102__k1",
+      "size": 7,
+      "target": 3,
+      "seed": 102,
+      "total_variation": 0.7951117753982544,
+      "high_frequency_energy_fraction": 0.7171224355697632,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6750984787940979,
+        0.522616982460022,
+        0.4863845407962799
+      ],
+      "patch_sha256": "6834368e9a1966aba3231a9217151f966cd29d8610ad02e41dadf9024cb26cf5"
+    },
+    {
+      "run_id": "basic__R__s7__t3__seed103__k1",
+      "size": 7,
+      "target": 3,
+      "seed": 103,
+      "total_variation": 0.7777029275894165,
+      "high_frequency_energy_fraction": 0.7050651907920837,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.7037318348884583,
+        0.5706886053085327,
+        0.5287317037582397
+      ],
+      "patch_sha256": "8636308f8d1a9bf6ed7b607f721ead0c6d3825534426ab7882b54ce49f298d67"
+    },
+    {
+      "run_id": "basic__R__s7__t4__seed101__k1",
+      "size": 7,
+      "target": 4,
+      "seed": 101,
+      "total_variation": 0.8332839012145996,
+      "high_frequency_energy_fraction": 0.7880222201347351,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5832512378692627,
+        0.5040319561958313,
+        0.369082510471344
+      ],
+      "patch_sha256": "c99569cc1b10843c97fe74cbb5eaed8d83bf5bf8f0edfedfb742008b9bedfc9d"
+    },
+    {
+      "run_id": "basic__R__s7__t4__seed102__k1",
+      "size": 7,
+      "target": 4,
+      "seed": 102,
+      "total_variation": 0.8922606110572815,
+      "high_frequency_energy_fraction": 0.7316633462905884,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6247091293334961,
+        0.5182986855506897,
+        0.4180557131767273
+      ],
+      "patch_sha256": "5ba4fabc06554db7d1e64475915c29b2d11e9faaf11b3058170013b349cb2f75"
+    },
+    {
+      "run_id": "basic__R__s7__t4__seed103__k1",
+      "size": 7,
+      "target": 4,
+      "seed": 103,
+      "total_variation": 0.5401624441146851,
+      "high_frequency_energy_fraction": 0.6872676014900208,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.3780677318572998,
+        0.3179247975349426,
+        0.1852121502161026
+      ],
+      "patch_sha256": "24c47bdb30003f0d0fd65d883cb7b05eaa6d24367b96f4296e5272e43266c5c1"
+    },
+    {
+      "run_id": "basic__R__s7__t5__seed101__k1",
+      "size": 7,
+      "target": 5,
+      "seed": 101,
+      "total_variation": 0.8030319213867188,
+      "high_frequency_energy_fraction": 0.7294647097587585,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6666222214698792,
+        0.5387741923332214,
+        0.44458746910095215
+      ],
+      "patch_sha256": "26af65f7c710385df45e8d121bb2d6fff3f0000e6de2d3f58a64fc82ba01e2c3"
+    },
+    {
+      "run_id": "basic__R__s7__t5__seed102__k1",
+      "size": 7,
+      "target": 5,
+      "seed": 102,
+      "total_variation": 0.7551741600036621,
+      "high_frequency_energy_fraction": 0.5775821805000305,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6482303142547607,
+        0.47752225399017334,
+        0.35502150654792786
+      ],
+      "patch_sha256": "377c8add6f1169751ee34f44768b04587901810932fd67400cefbfc92b7eb932"
+    },
+    {
+      "run_id": "basic__R__s7__t5__seed103__k1",
+      "size": 7,
+      "target": 5,
+      "seed": 103,
+      "total_variation": 0.7331070899963379,
+      "high_frequency_energy_fraction": 0.606533944606781,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6115822792053223,
+        0.46455100178718567,
+        0.3791331946849823
+      ],
+      "patch_sha256": "1bf751e75c87893eee69fc65b818ff67330303594acc6228090734ff2650ad12"
+    },
+    {
+      "run_id": "basic__R__s7__t6__seed101__k1",
+      "size": 7,
+      "target": 6,
+      "seed": 101,
+      "total_variation": 0.755638062953949,
+      "high_frequency_energy_fraction": 0.7398130297660828,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.44820624589920044,
+        0.7038412094116211,
+        0.23149845004081726
+      ],
+      "patch_sha256": "a3516fb99f3b9fe961e375849775285dfd9be8b84816db3f43593719db49e77b"
+    },
+    {
+      "run_id": "basic__R__s7__t6__seed102__k1",
+      "size": 7,
+      "target": 6,
+      "seed": 102,
+      "total_variation": 0.7573745250701904,
+      "high_frequency_energy_fraction": 0.7592540979385376,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4478582739830017,
+        0.6691920161247253,
+        0.21927566826343536
+      ],
+      "patch_sha256": "8c12458009b04ed6406f19c2a2e1e1bf30f7b2ea2a60a681f3cfd67728fedb3c"
+    },
+    {
+      "run_id": "basic__R__s7__t6__seed103__k1",
+      "size": 7,
+      "target": 6,
+      "seed": 103,
+      "total_variation": 0.7535233497619629,
+      "high_frequency_energy_fraction": 0.7499616742134094,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.43027228116989136,
+        0.6845024824142456,
+        0.21341267228126526
+      ],
+      "patch_sha256": "286d8eb001106f95437752c719ebd17372c5f3ab8c9b0204d26e5bbf0ed83f10"
+    },
+    {
+      "run_id": "basic__R__s7__t7__seed101__k1",
+      "size": 7,
+      "target": 7,
+      "seed": 101,
+      "total_variation": 0.8683269023895264,
+      "high_frequency_energy_fraction": 0.822657585144043,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6334913372993469,
+        0.5193983912467957,
+        0.489795058965683
+      ],
+      "patch_sha256": "493638441081965558bb45af756eedbec05b1c0782c04a99cb8e755bb6ede5a4"
+    },
+    {
+      "run_id": "basic__R__s7__t7__seed102__k1",
+      "size": 7,
+      "target": 7,
+      "seed": 102,
+      "total_variation": 0.8840948939323425,
+      "high_frequency_energy_fraction": 0.8072822690010071,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5592820048332214,
+        0.5382241010665894,
+        0.6043492555618286
+      ],
+      "patch_sha256": "038927ab569ce787e194f76b2e6d874da8c3003a3ef603aa2cd2e707c93a6594"
+    },
+    {
+      "run_id": "basic__R__s7__t7__seed103__k1",
+      "size": 7,
+      "target": 7,
+      "seed": 103,
+      "total_variation": 0.8177012205123901,
+      "high_frequency_energy_fraction": 0.7513072490692139,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6241028308868408,
+        0.5630316734313965,
+        0.6146174669265747
+      ],
+      "patch_sha256": "93c96b5671966f0f89ced8f104e5287d419eec5244e1286d388105473639ac83"
+    },
+    {
+      "run_id": "basic__R__s7__t8__seed101__k1",
+      "size": 7,
+      "target": 8,
+      "seed": 101,
+      "total_variation": 0.7842896580696106,
+      "high_frequency_energy_fraction": 0.7560015320777893,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.7643124461174011,
+        0.6154861450195312,
+        0.5669903755187988
+      ],
+      "patch_sha256": "7ed77d29136dec3ec496893d30e672e13b3d83bba2b6cc53fb9eb48df0a4f05f"
+    },
+    {
+      "run_id": "basic__R__s7__t8__seed102__k1",
+      "size": 7,
+      "target": 8,
+      "seed": 102,
+      "total_variation": 0.8621159791946411,
+      "high_frequency_energy_fraction": 0.8973274230957031,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.7708777785301208,
+        0.5690438747406006,
+        0.5189871788024902
+      ],
+      "patch_sha256": "bb7c4fa7a1ff011d5dc790c2de0bc84e2a989cc7dd34ea4480d014868e88dae2"
+    },
+    {
+      "run_id": "basic__R__s7__t8__seed103__k1",
+      "size": 7,
+      "target": 8,
+      "seed": 103,
+      "total_variation": 0.8634636402130127,
+      "high_frequency_energy_fraction": 0.9137271642684937,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.7381278872489929,
+        0.5743960738182068,
+        0.4826701283454895
+      ],
+      "patch_sha256": "c0c9e4a8a4b4ab218c1755b5cd14a7e19b02a766ad705211d4f7e16ed012100a"
+    },
+    {
+      "run_id": "basic__R__s7__t9__seed101__k1",
+      "size": 7,
+      "target": 9,
+      "seed": 101,
+      "total_variation": 0.85153728723526,
+      "high_frequency_energy_fraction": 0.8518557548522949,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6494840383529663,
+        0.4699522852897644,
+        0.4398444890975952
+      ],
+      "patch_sha256": "815e877973c711ad974d4db93216d2a65aff7ef7c3a5d1964b0f3175e9289a81"
+    },
+    {
+      "run_id": "basic__R__s7__t9__seed102__k1",
+      "size": 7,
+      "target": 9,
+      "seed": 102,
+      "total_variation": 0.8065096735954285,
+      "high_frequency_energy_fraction": 0.8524590730667114,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6262255907058716,
+        0.47843286395072937,
+        0.4639536142349243
+      ],
+      "patch_sha256": "315a6543a3b838b41c6abf5d4324ef58680f3d3b31d5dacd9675617349b80be8"
+    },
+    {
+      "run_id": "basic__R__s7__t9__seed103__k1",
+      "size": 7,
+      "target": 9,
+      "seed": 103,
+      "total_variation": 0.8558673858642578,
+      "high_frequency_energy_fraction": 0.9088054895401001,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5708367228507996,
+        0.4153435230255127,
+        0.5016773343086243
+      ],
+      "patch_sha256": "c1a2756513a533d0239f3513366681cfdef36f1ba370bb86dc773d278b257e26"
+    },
+    {
+      "run_id": "basic__R__s16__tNone__seed101__k1",
+      "size": 16,
+      "target": null,
+      "seed": 101,
+      "total_variation": 0.6314660310745239,
+      "high_frequency_energy_fraction": 0.6534794569015503,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6123939156532288,
+        0.5564590692520142,
+        0.43068450689315796
+      ],
+      "patch_sha256": "ab486c1947469e69a27aa473a254bea3d5abe8e8a71e0677ced174848cdad699"
+    },
+    {
+      "run_id": "basic__R__s16__tNone__seed102__k1",
+      "size": 16,
+      "target": null,
+      "seed": 102,
+      "total_variation": 0.566047191619873,
+      "high_frequency_energy_fraction": 0.608731210231781,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6046786904335022,
+        0.6274189949035645,
+        0.38878780603408813
+      ],
+      "patch_sha256": "354b8dd076a3bff43d49b7d41d89d59f422c72e3ca9f8b3ce679769678b6b622"
+    },
+    {
+      "run_id": "basic__R__s16__tNone__seed103__k1",
+      "size": 16,
+      "target": null,
+      "seed": 103,
+      "total_variation": 0.5827604532241821,
+      "high_frequency_energy_fraction": 0.5964457392692566,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6283787488937378,
+        0.6120165586471558,
+        0.38664260506629944
+      ],
+      "patch_sha256": "2ab5b577288c11554cb3cb0715e3f131d53d1120dd05e95de605aa2d1cc2e5fd"
+    },
+    {
+      "run_id": "basic__R__s16__t0__seed101__k1",
+      "size": 16,
+      "target": 0,
+      "seed": 101,
+      "total_variation": 0.6891977787017822,
+      "high_frequency_energy_fraction": 0.6750128865242004,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.583915650844574,
+        0.5523911714553833,
+        0.4796716868877411
+      ],
+      "patch_sha256": "0fe25606e587653d43aa57f19ba54054cdb420eb845f967138f237cfbade7a10"
+    },
+    {
+      "run_id": "basic__R__s16__t0__seed102__k1",
+      "size": 16,
+      "target": 0,
+      "seed": 102,
+      "total_variation": 0.6707295179367065,
+      "high_frequency_energy_fraction": 0.6244828701019287,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5438404083251953,
+        0.5367447137832642,
+        0.5203126072883606
+      ],
+      "patch_sha256": "57c2c8a59acaaef482a39b79160b23a054cf7bb2100df5b41c6053a7f69ea8b4"
+    },
+    {
+      "run_id": "basic__R__s16__t0__seed103__k1",
+      "size": 16,
+      "target": 0,
+      "seed": 103,
+      "total_variation": 0.647958517074585,
+      "high_frequency_energy_fraction": 0.6420620679855347,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6000148057937622,
+        0.5955055952072144,
+        0.5227682590484619
+      ],
+      "patch_sha256": "26aac8d6bfd2fc49b65fd8226fd250e70fc1b8c2733379d8759835adc29e3920"
+    },
+    {
+      "run_id": "basic__R__s16__t1__seed101__k1",
+      "size": 16,
+      "target": 1,
+      "seed": 101,
+      "total_variation": 0.7328453063964844,
+      "high_frequency_energy_fraction": 0.6976715326309204,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4554579257965088,
+        0.48481905460357666,
+        0.5461644530296326
+      ],
+      "patch_sha256": "6dd2191d80575cd363c49e9245247d817d2d4dd1c96bbf54bf7001c59a06de01"
+    },
+    {
+      "run_id": "basic__R__s16__t1__seed102__k1",
+      "size": 16,
+      "target": 1,
+      "seed": 102,
+      "total_variation": 0.7265322804450989,
+      "high_frequency_energy_fraction": 0.6776620149612427,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.47984451055526733,
+        0.49039319157600403,
+        0.5373077988624573
+      ],
+      "patch_sha256": "b2c21ccc3bbc7acadc1d3e93624e475d97cfc29f4a324fdaa77be53bf9f27cd8"
+    },
+    {
+      "run_id": "basic__R__s16__t1__seed103__k1",
+      "size": 16,
+      "target": 1,
+      "seed": 103,
+      "total_variation": 0.7021886110305786,
+      "high_frequency_energy_fraction": 0.6345999240875244,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.47551965713500977,
+        0.46787524223327637,
+        0.5009503364562988
+      ],
+      "patch_sha256": "9f686451ea2b0e9f2dcda21769f4cf026d86fa57d28eed686d290c6a125f0786"
+    },
+    {
+      "run_id": "basic__R__s16__t2__seed101__k1",
+      "size": 16,
+      "target": 2,
+      "seed": 101,
+      "total_variation": 0.7500683069229126,
+      "high_frequency_energy_fraction": 0.643548846244812,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4699667692184448,
+        0.4717022180557251,
+        0.49297529458999634
+      ],
+      "patch_sha256": "a83f5462c61e24248ad18c768a830015f0b1dbc0271886925ce9dbf884af29b4"
+    },
+    {
+      "run_id": "basic__R__s16__t2__seed102__k1",
+      "size": 16,
+      "target": 2,
+      "seed": 102,
+      "total_variation": 0.6906951665878296,
+      "high_frequency_energy_fraction": 0.593072235584259,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.41173556447029114,
+        0.521194577217102,
+        0.5520910024642944
+      ],
+      "patch_sha256": "f295b9f7802f3adde726383f5c8bcf033a05d9c41a991f7a5ad06f5f747f44c4"
+    },
+    {
+      "run_id": "basic__R__s16__t2__seed103__k1",
+      "size": 16,
+      "target": 2,
+      "seed": 103,
+      "total_variation": 0.6665695309638977,
+      "high_frequency_energy_fraction": 0.6316968202590942,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.47928065061569214,
+        0.48900851607322693,
+        0.4517129063606262
+      ],
+      "patch_sha256": "dfb126ef16d819238fff9841c7167ffb5af0465beed2b1ab9873b6ba30f83c44"
+    },
+    {
+      "run_id": "basic__R__s16__t3__seed101__k1",
+      "size": 16,
+      "target": 3,
+      "seed": 101,
+      "total_variation": 0.6138345003128052,
+      "high_frequency_energy_fraction": 0.6378232836723328,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5264256000518799,
+        0.5896840691566467,
+        0.5463470220565796
+      ],
+      "patch_sha256": "059c2d1c1b0cd505fe0799ee1870728ba4d40d6aa6e613f57f32de89ec796a31"
+    },
+    {
+      "run_id": "basic__R__s16__t3__seed102__k1",
+      "size": 16,
+      "target": 3,
+      "seed": 102,
+      "total_variation": 0.6091291904449463,
+      "high_frequency_energy_fraction": 0.6590343117713928,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5885355472564697,
+        0.5487356781959534,
+        0.5062012672424316
+      ],
+      "patch_sha256": "7d501bd611d2537f377a59951c6df3a9425b585b50fd9c18c1012ef305bb70b4"
+    },
+    {
+      "run_id": "basic__R__s16__t3__seed103__k1",
+      "size": 16,
+      "target": 3,
+      "seed": 103,
+      "total_variation": 0.6327067613601685,
+      "high_frequency_energy_fraction": 0.6169989705085754,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.49787747859954834,
+        0.5892733335494995,
+        0.50372314453125
+      ],
+      "patch_sha256": "4a83386aaf73ebbef20c2efe07105a77156da587844864b6d3671fe9ae722bfa"
+    },
+    {
+      "run_id": "basic__R__s16__t4__seed101__k1",
+      "size": 16,
+      "target": 4,
+      "seed": 101,
+      "total_variation": 0.6993224620819092,
+      "high_frequency_energy_fraction": 0.7682104706764221,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.4882214069366455,
+        0.5333529710769653,
+        0.41250306367874146
+      ],
+      "patch_sha256": "24a7eaffcb3f558997b9003d67f776baa309be85ef7d657487ffa1f5cea8709a"
+    },
+    {
+      "run_id": "basic__R__s16__t4__seed102__k1",
+      "size": 16,
+      "target": 4,
+      "seed": 102,
+      "total_variation": 0.6676110029220581,
+      "high_frequency_energy_fraction": 0.7506227493286133,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5155326128005981,
+        0.5145979523658752,
+        0.39200204610824585
+      ],
+      "patch_sha256": "8c931c256eeb06dfddf3bf9188be69a416c421321a1ffad713c93f1ec34b70d1"
+    },
+    {
+      "run_id": "basic__R__s16__t4__seed103__k1",
+      "size": 16,
+      "target": 4,
+      "seed": 103,
+      "total_variation": 0.647796630859375,
+      "high_frequency_energy_fraction": 0.7026888728141785,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5201859474182129,
+        0.5696524381637573,
+        0.45539700984954834
+      ],
+      "patch_sha256": "46264e6d6d028f0732266e7a1f6a3c14d78a8f5ec7ea2a72c2b58be0e5ddc0bc"
+    },
+    {
+      "run_id": "basic__R__s16__t5__seed101__k1",
+      "size": 16,
+      "target": 5,
+      "seed": 101,
+      "total_variation": 0.6121041178703308,
+      "high_frequency_energy_fraction": 0.5802283883094788,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5633445978164673,
+        0.5073308944702148,
+        0.42112550139427185
+      ],
+      "patch_sha256": "947561683aca560fb5c6c62805d0d6d412ccbee4c0b2cfe0bcc474c3f52af964"
+    },
+    {
+      "run_id": "basic__R__s16__t5__seed102__k1",
+      "size": 16,
+      "target": 5,
+      "seed": 102,
+      "total_variation": 0.6670644879341125,
+      "high_frequency_energy_fraction": 0.6799110770225525,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.572006344795227,
+        0.48603105545043945,
+        0.4839380085468292
+      ],
+      "patch_sha256": "ef5ce34ba509a9286dceb63c89cffa188f339d5c415778be23c4b0e88a0365f9"
+    },
+    {
+      "run_id": "basic__R__s16__t5__seed103__k1",
+      "size": 16,
+      "target": 5,
+      "seed": 103,
+      "total_variation": 0.6723835468292236,
+      "high_frequency_energy_fraction": 0.6626049280166626,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5326465368270874,
+        0.5062787532806396,
+        0.47510194778442383
+      ],
+      "patch_sha256": "09ad02c6c8f18ca2394ac42f4d4d0ff2c27f457387332f4555480e34dd9872a1"
+    },
+    {
+      "run_id": "basic__R__s16__t6__seed101__k1",
+      "size": 16,
+      "target": 6,
+      "seed": 101,
+      "total_variation": 0.6241394877433777,
+      "high_frequency_energy_fraction": 0.7025654315948486,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5290766954421997,
+        0.5512446165084839,
+        0.33583730459213257
+      ],
+      "patch_sha256": "935811de4e1d096a22648a2f72dcef8d5973cd12f3b3f2cdc3b75b01931fabc4"
+    },
+    {
+      "run_id": "basic__R__s16__t6__seed102__k1",
+      "size": 16,
+      "target": 6,
+      "seed": 102,
+      "total_variation": 0.6024379730224609,
+      "high_frequency_energy_fraction": 0.6605495810508728,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5079478025436401,
+        0.5768842697143555,
+        0.36215734481811523
+      ],
+      "patch_sha256": "6513a584c9f3eca73f5a8401d71966da62f6d95a53897bae0162e06c020fc6d2"
+    },
+    {
+      "run_id": "basic__R__s16__t6__seed103__k1",
+      "size": 16,
+      "target": 6,
+      "seed": 103,
+      "total_variation": 0.6009272933006287,
+      "high_frequency_energy_fraction": 0.5831809043884277,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5198690295219421,
+        0.5435547828674316,
+        0.36629652976989746
+      ],
+      "patch_sha256": "c208fcd5df2c5a9fe6cf94b84dc6af562cac9727b42aad183bfc9e4c3d608a06"
+    },
+    {
+      "run_id": "basic__R__s16__t7__seed101__k1",
+      "size": 16,
+      "target": 7,
+      "seed": 101,
+      "total_variation": 0.6789047718048096,
+      "high_frequency_energy_fraction": 0.6711872816085815,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5793153643608093,
+        0.5331807732582092,
+        0.5314638614654541
+      ],
+      "patch_sha256": "acadc427b3d9d35b4eb316856164e421cf4e131d20dded2cc57071942fb914ce"
+    },
+    {
+      "run_id": "basic__R__s16__t7__seed102__k1",
+      "size": 16,
+      "target": 7,
+      "seed": 102,
+      "total_variation": 0.6622065901756287,
+      "high_frequency_energy_fraction": 0.6407188773155212,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5313795804977417,
+        0.5249636173248291,
+        0.5455206036567688
+      ],
+      "patch_sha256": "6607683332bbc321bb1cd290cf40ae8f7520b6d51939e1b36e6880dfdd877e84"
+    },
+    {
+      "run_id": "basic__R__s16__t7__seed103__k1",
+      "size": 16,
+      "target": 7,
+      "seed": 103,
+      "total_variation": 0.7067175507545471,
+      "high_frequency_energy_fraction": 0.7122122049331665,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5410232543945312,
+        0.5474982261657715,
+        0.5121047496795654
+      ],
+      "patch_sha256": "5dc9372889685039d9214696e70a4f071c1a7519583059fe3fc7a7608bfb76b1"
+    },
+    {
+      "run_id": "basic__R__s16__t8__seed101__k1",
+      "size": 16,
+      "target": 8,
+      "seed": 101,
+      "total_variation": 0.6831172108650208,
+      "high_frequency_energy_fraction": 0.6789098381996155,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6499618291854858,
+        0.6022058725357056,
+        0.5820703506469727
+      ],
+      "patch_sha256": "0ad8af83e2e96d7eb4e9e5835456249d7e66a0ea8d904cd4d2f5de0a4ab5d7a6"
+    },
+    {
+      "run_id": "basic__R__s16__t8__seed102__k1",
+      "size": 16,
+      "target": 8,
+      "seed": 102,
+      "total_variation": 0.6450236439704895,
+      "high_frequency_energy_fraction": 0.7119573950767517,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.7017241716384888,
+        0.6440333724021912,
+        0.6088569760322571
+      ],
+      "patch_sha256": "70b54da54bf4331fc52d81785f6f64f4db3a600d556bb28bc2e5b3fcad360f07"
+    },
+    {
+      "run_id": "basic__R__s16__t8__seed103__k1",
+      "size": 16,
+      "target": 8,
+      "seed": 103,
+      "total_variation": 0.6547532081604004,
+      "high_frequency_energy_fraction": 0.6596547365188599,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.6500892043113708,
+        0.5807822942733765,
+        0.6138908863067627
+      ],
+      "patch_sha256": "8b98e9e38f7a54e8249a9882006035da10d7be580bfc654f525039be52a846e7"
+    },
+    {
+      "run_id": "basic__R__s16__t9__seed101__k1",
+      "size": 16,
+      "target": 9,
+      "seed": 101,
+      "total_variation": 0.6267200708389282,
+      "high_frequency_energy_fraction": 0.6724205017089844,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5458657741546631,
+        0.506754457950592,
+        0.45051538944244385
+      ],
+      "patch_sha256": "9d98b9c635a0b18d169e76abf6cb4c548aa88a49c0ee89eceba21de0f6187468"
+    },
+    {
+      "run_id": "basic__R__s16__t9__seed102__k1",
+      "size": 16,
+      "target": 9,
+      "seed": 102,
+      "total_variation": 0.6070197820663452,
+      "high_frequency_energy_fraction": 0.649770975112915,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5097533464431763,
+        0.5427197813987732,
+        0.4734615683555603
+      ],
+      "patch_sha256": "5eb8748174ca50ccaaeddb0222ee6407d24fbab0c4fc3bd0c3034522cbc44e0d"
+    },
+    {
+      "run_id": "basic__R__s16__t9__seed103__k1",
+      "size": 16,
+      "target": 9,
+      "seed": 103,
+      "total_variation": 0.6196528673171997,
+      "high_frequency_energy_fraction": 0.6709553003311157,
+      "high_frequency_definition": "radial frequency >= 0.25 cycles/pixel after channel-mean removal",
+      "channel_means": [
+        0.5485235452651978,
+        0.4635279178619385,
+        0.4932815134525299
+      ],
+      "patch_sha256": "1c74413da0d47015a394ee2964ade36a878039508f932b270683016309646361"
+    }
+  ],
+  "ensemble_histories": [
+    {
+      "phase": "ensemble_steps",
+      "strategy": "R",
+      "target": null,
+      "seed": 101,
+      "history": [
+        {
+          "step": 0,
+          "asr": 0.08886192017259978,
+          "training_time": 0.0
+        },
+        {
+          "step": 100,
+          "asr": 0.4429611650485437,
+          "training_time": 4.106044198735617,
+          "loss": -2.5585439205169678,
+          "gradient_norm": 0.6965702176094055
+        },
+        {
+          "step": 200,
+          "asr": 0.4488942826321467,
+          "training_time": 4.9638780993409455,
+          "loss": -2.3322529792785645,
+          "gradient_norm": 0.6034778952598572
+        },
+        {
+          "step": 300,
+          "asr": 0.45307443365695793,
+          "training_time": 5.814922399236821,
+          "loss": -3.1940560340881348,
+          "gradient_norm": 0.6472989916801453
+        },
+        {
+          "step": 400,
+          "asr": 0.45159115426105717,
+          "training_time": 6.666423999355175,
+          "loss": -2.326751232147217,
+          "gradient_norm": 0.7215368151664734
+        },
+        {
+          "step": 500,
+          "asr": 0.44916396979503775,
+          "training_time": 7.52169349999167,
+          "loss": -2.1177544593811035,
+          "gradient_norm": 0.6364153623580933
+        },
+        {
+          "step": 600,
+          "asr": 0.4495685005393743,
+          "training_time": 8.39961820060853,
+          "loss": -3.0058369636535645,
+          "gradient_norm": 0.6871094107627869
+        },
+        {
+          "step": 700,
+          "asr": 0.4517259978425027,
+          "training_time": 9.307381100370549,
+          "loss": -2.8150599002838135,
+          "gradient_norm": 0.7807109355926514
+        },
+        {
+          "step": 800,
+          "asr": 0.45024271844660196,
+          "training_time": 10.187384300399572,
+          "loss": -3.081606149673462,
+          "gradient_norm": 0.7736241221427917
+        },
+        {
+          "step": 900,
+          "asr": 0.45024271844660196,
+          "training_time": 11.010496100527234,
+          "loss": -2.462641716003418,
+          "gradient_norm": 0.6786805391311646
+        },
+        {
+          "step": 1000,
+          "asr": 0.4511866235167206,
+          "training_time": 11.8996081011137,
+          "loss": -2.5347325801849365,
+          "gradient_norm": 0.7097787261009216
+        }
+      ]
+    },
+    {
+      "phase": "ensemble_steps",
+      "strategy": "R",
+      "target": 3,
+      "seed": 101,
+      "history": [
+        {
+          "step": 0,
+          "asr": 0.027348394768133173,
+          "training_time": 0.0
+        },
+        {
+          "step": 100,
+          "asr": 0.4472354340071344,
+          "training_time": 0.9077726991381496,
+          "loss": 2.8912906646728516,
+          "gradient_norm": 1.0092380046844482
+        },
+        {
+          "step": 200,
+          "asr": 0.45466706302021404,
+          "training_time": 1.8057061983272433,
+          "loss": 3.0666019916534424,
+          "gradient_norm": 0.7543351054191589
+        },
+        {
+          "step": 300,
+          "asr": 0.45630202140309156,
+          "training_time": 2.7009889980545267,
+          "loss": 2.8421874046325684,
+          "gradient_norm": 0.7600482106208801
+        },
+        {
+          "step": 400,
+          "asr": 0.460166468489893,
+          "training_time": 3.585247297771275,
+          "loss": 3.0198135375976562,
+          "gradient_norm": 1.1005111932754517
+        },
+        {
+          "step": 500,
+          "asr": 0.4598692033293698,
+          "training_time": 4.478038097266108,
+          "loss": 2.8965682983398438,
+          "gradient_norm": 1.048248291015625
+        },
+        {
+          "step": 600,
+          "asr": 0.46165279429250894,
+          "training_time": 5.378289096057415,
+          "loss": 2.573666572570801,
+          "gradient_norm": 0.9282420873641968
+        },
+        {
+          "step": 700,
+          "asr": 0.4644768133174792,
+          "training_time": 6.280770895653404,
+          "loss": 2.190035343170166,
+          "gradient_norm": 0.7404582500457764
+        },
+        {
+          "step": 800,
+          "asr": 0.46076099881093935,
+          "training_time": 7.18456039566081,
+          "loss": 1.7619109153747559,
+          "gradient_norm": 0.6005555391311646
+        },
+        {
+          "step": 900,
+          "asr": 0.46105826397146255,
+          "training_time": 8.101434195879847,
+          "loss": 2.121469497680664,
+          "gradient_norm": 0.6789127588272095
+        },
+        {
+          "step": 1000,
+          "asr": 0.4643281807372176,
+          "training_time": 8.984325597411953,
+          "loss": 2.8529906272888184,
+          "gradient_norm": 0.84316086769104
+        }
+      ]
+    },
+    {
+      "phase": "ensemble_steps",
+      "strategy": "V",
+      "target": null,
+      "seed": 101,
+      "history": [
+        {
+          "step": 0,
+          "asr": 0.15064446831364126,
+          "training_time": 0.0
+        },
+        {
+          "step": 100,
+          "asr": 0.6181525241675617,
+          "training_time": 0.7470579997170717,
+          "loss": -3.240978240966797,
+          "gradient_norm": 1.1811355352401733
+        },
+        {
+          "step": 200,
+          "asr": 0.6446025778732546,
+          "training_time": 1.5017388999694958,
+          "loss": -3.6181159019470215,
+          "gradient_norm": 0.9542097449302673
+        },
+        {
+          "step": 300,
+          "asr": 0.6459452201933404,
+          "training_time": 2.25103999953717,
+          "loss": -3.919349431991577,
+          "gradient_norm": 0.9377362132072449
+        },
+        {
+          "step": 400,
+          "asr": 0.6466165413533834,
+          "training_time": 3.1556040997384116,
+          "loss": -3.7265233993530273,
+          "gradient_norm": 1.1184847354888916
+        },
+        {
+          "step": 500,
+          "asr": 0.6483619763694952,
+          "training_time": 4.112732199486345,
+          "loss": -3.796619415283203,
+          "gradient_norm": 1.141070008277893
+        },
+        {
+          "step": 600,
+          "asr": 0.6470193340494093,
+          "training_time": 5.074730699299835,
+          "loss": -3.638660430908203,
+          "gradient_norm": 1.0063035488128662
+        },
+        {
+          "step": 700,
+          "asr": 0.6479591836734694,
+          "training_time": 6.037000699550845,
+          "loss": -4.233430862426758,
+          "gradient_norm": 1.1471548080444336
+        },
+        {
+          "step": 800,
+          "asr": 0.6475563909774437,
+          "training_time": 6.9975945997284725,
+          "loss": -3.522705316543579,
+          "gradient_norm": 1.0001661777496338
+        },
+        {
+          "step": 900,
+          "asr": 0.6470193340494093,
+          "training_time": 7.929802200291306,
+          "loss": -3.734070301055908,
+          "gradient_norm": 1.1200612783432007
+        },
+        {
+          "step": 1000,
+          "asr": 0.6479591836734694,
+          "training_time": 8.871682100463659,
+          "loss": -3.8949480056762695,
+          "gradient_norm": 1.1218081712722778
+        }
+      ]
+    },
+    {
+      "phase": "ensemble_steps",
+      "strategy": "V",
+      "target": 3,
+      "seed": 101,
+      "history": [
+        {
+          "step": 0,
+          "asr": 0.024673008323424495,
+          "training_time": 0.0
+        },
+        {
+          "step": 100,
+          "asr": 0.4892984542211653,
+          "training_time": 0.7378556998446584,
+          "loss": 2.6212449073791504,
+          "gradient_norm": 0.9139108657836914
+        },
+        {
+          "step": 200,
+          "asr": 0.4927170035671819,
+          "training_time": 1.50086090026889,
+          "loss": 2.5198564529418945,
+          "gradient_norm": 0.9701521992683411
+        },
+        {
+          "step": 300,
+          "asr": 0.4928656361474435,
+          "training_time": 2.2821357004577294,
+          "loss": 2.7051281929016113,
+          "gradient_norm": 0.9978764653205872
+        },
+        {
+          "step": 400,
+          "asr": 0.49123067776456597,
+          "training_time": 3.034570701071061,
+          "loss": 2.737886428833008,
+          "gradient_norm": 1.0831866264343262
+        },
+        {
+          "step": 500,
+          "asr": 0.4927170035671819,
+          "training_time": 3.9621581010287628,
+          "loss": 2.3035635948181152,
+          "gradient_norm": 0.9747806787490845
+        },
+        {
+          "step": 600,
+          "asr": 0.49123067776456597,
+          "training_time": 4.949814801104367,
+          "loss": 2.291550636291504,
+          "gradient_norm": 0.8558540344238281
+        },
+        {
+          "step": 700,
+          "asr": 0.4887039239001189,
+          "training_time": 5.917685201624408,
+          "loss": 2.2883150577545166,
+          "gradient_norm": 0.8917643427848816
+        },
+        {
+          "step": 800,
+          "asr": 0.4881093935790725,
+          "training_time": 6.882953502237797,
+          "loss": 1.8518873453140259,
+          "gradient_norm": 0.7659265995025635
+        },
+        {
+          "step": 900,
+          "asr": 0.4884066587395957,
+          "training_time": 7.850200802553445,
+          "loss": 2.2392430305480957,
+          "gradient_norm": 0.8034650087356567
+        },
+        {
+          "step": 1000,
+          "asr": 0.49078478002378123,
+          "training_time": 8.811271102167666,
+          "loss": 2.4364819526672363,
+          "gradient_norm": 0.8048415780067444
+        }
+      ]
+    },
+    {
+      "phase": "ensemble_steps",
+      "strategy": "RV",
+      "target": null,
+      "seed": 101,
+      "history": [
+        {
+          "step": 0,
+          "asr": 0.11975319424312052,
+          "training_time": 0.0
+        },
+        {
+          "step": 100,
+          "asr": 0.45886495886039647,
+          "training_time": 1.588760199956596,
+          "loss": -2.2257509231567383,
+          "gradient_norm": 0.5272480845451355
+        },
+        {
+          "step": 200,
+          "asr": 0.46432641358365867,
+          "training_time": 2.85365720000118,
+          "loss": -1.9962713718414307,
+          "gradient_norm": 0.623035728931427
+        },
+        {
+          "step": 300,
+          "asr": 0.4673927653159714,
+          "training_time": 4.134479199885391,
+          "loss": -2.6825594902038574,
+          "gradient_norm": 0.5729101896286011
+        },
+        {
+          "step": 400,
+          "asr": 0.4715723369913457,
+          "training_time": 5.618832500069402,
+          "loss": -2.289000988006592,
+          "gradient_norm": 0.6662578582763672
+        },
+        {
+          "step": 500,
+          "asr": 0.4691590569118126,
+          "training_time": 7.201658800011501,
+          "loss": -2.238947868347168,
+          "gradient_norm": 0.6399495601654053
+        },
+        {
+          "step": 600,
+          "asr": 0.4682843116807275,
+          "training_time": 8.790960899204947,
+          "loss": -2.5172080993652344,
+          "gradient_norm": 0.6066679954528809
+        },
+        {
+          "step": 700,
+          "asr": 0.4666007946356877,
+          "training_time": 10.383646598202176,
+          "loss": -2.614821434020996,
+          "gradient_norm": 0.6969712376594543
+        },
+        {
+          "step": 800,
+          "asr": 0.4653139871175859,
+          "training_time": 11.977245397865772,
+          "loss": -2.4487876892089844,
+          "gradient_norm": 0.5847238302230835
+        },
+        {
+          "step": 900,
+          "asr": 0.4686691445442084,
+          "training_time": 13.339923297055066,
+          "loss": -2.318204402923584,
+          "gradient_norm": 0.5695655941963196
+        },
+        {
+          "step": 1000,
+          "asr": 0.4683259524215069,
+          "training_time": 14.682084097876213,
+          "loss": -2.531675100326538,
+          "gradient_norm": 0.630922794342041
+        }
+      ]
+    },
+    {
+      "phase": "ensemble_steps",
+      "strategy": "RV",
+      "target": 3,
+      "seed": 101,
+      "history": [
+        {
+          "step": 0,
+          "asr": 0.026010701545778836,
+          "training_time": 0.0
+        },
+        {
+          "step": 100,
+          "asr": 0.39870689655172414,
+          "training_time": 1.6378739993087947,
+          "loss": 3.287639856338501,
+          "gradient_norm": 1.039017677307129
+        },
+        {
+          "step": 200,
+          "asr": 0.4077734839476813,
+          "training_time": 2.895735898637213,
+          "loss": 3.3018689155578613,
+          "gradient_norm": 1.0267343521118164
+        },
+        {
+          "step": 300,
+          "asr": 0.40725326991676575,
+          "training_time": 4.1593624979723245,
+          "loss": 3.3676486015319824,
+          "gradient_norm": 1.0603870153427124
+        },
+        {
+          "step": 400,
+          "asr": 0.4059898929845422,
+          "training_time": 5.427935297950171,
+          "loss": 3.522576332092285,
+          "gradient_norm": 1.148564100265503
+        },
+        {
+          "step": 500,
+          "asr": 0.40539536266349585,
+          "training_time": 6.678025398403406,
+          "loss": 3.2426939010620117,
+          "gradient_norm": 1.126130223274231
+        },
+        {
+          "step": 600,
+          "asr": 0.40628715814506544,
+          "training_time": 7.9595415976364166,
+          "loss": 2.9411988258361816,
+          "gradient_norm": 0.9823177456855774
+        },
+        {
+          "step": 700,
+          "asr": 0.40539536266349585,
+          "training_time": 9.224428296787664,
+          "loss": 2.8829755783081055,
+          "gradient_norm": 1.200154185295105
+        },
+        {
+          "step": 800,
+          "asr": 0.40792211652794297,
+          "training_time": 10.486534196534194,
+          "loss": 2.2914390563964844,
+          "gradient_norm": 0.8618676066398621
+        },
+        {
+          "step": 900,
+          "asr": 0.4074762187871581,
+          "training_time": 11.740459497785196,
+          "loss": 2.7804508209228516,
+          "gradient_norm": 0.8592498302459717
+        },
+        {
+          "step": 1000,
+          "asr": 0.40598989298454224,
+          "training_time": 13.022235598415136,
+          "loss": 3.169647455215454,
+          "gradient_norm": 0.9344695806503296
+        }
+      ]
+    },
+    {
+      "phase": "ensemble_time",
+      "strategy": "R",
+      "target": null,
+      "seed": 101,
+      "history": [
+        {
+          "step": 0,
+          "asr": 0.08886192017259978,
+          "training_time": 0.0
+        },
+        {
+          "step": 100,
+          "asr": 0.4405339805825243,
+          "training_time": 0.964373400202021,
+          "loss": -2.541210651397705,
+          "gradient_norm": 0.6967130303382874
+        },
+        {
+          "step": 200,
+          "asr": 0.4488942826321467,
+          "training_time": 1.7920618008356541,
+          "loss": -2.3337936401367188,
+          "gradient_norm": 0.5997268557548523
+        },
+        {
+          "step": 300,
+          "asr": 0.453344120819849,
+          "training_time": 2.6175579014234245,
+          "loss": -3.192563533782959,
+          "gradient_norm": 0.6419707536697388
+        },
+        {
+          "step": 400,
+          "asr": 0.4521305285868393,
+          "training_time": 3.4421695021446794,
+          "loss": -2.3261923789978027,
+          "gradient_norm": 0.734012246131897
+        },
+        {
+          "step": 500,
+          "asr": 0.4501078748651564,
+          "training_time": 4.275613702600822,
+          "loss": -2.1166324615478516,
+          "gradient_norm": 0.6339232921600342
+        },
+        {
+          "step": 600,
+          "asr": 0.4495685005393743,
+          "training_time": 5.091444802470505,
+          "loss": -3.011410713195801,
+          "gradient_norm": 0.6949942111968994
+        },
+        {
+          "step": 700,
+          "asr": 0.4522653721682848,
+          "training_time": 5.906465901760384,
+          "loss": -2.8227477073669434,
+          "gradient_norm": 0.7816754579544067
+        },
+        {
+          "step": 800,
+          "asr": 0.45051240560949296,
+          "training_time": 6.7264229017309844,
+          "loss": -3.0859298706054688,
+          "gradient_norm": 0.7599999904632568
+        },
+        {
+          "step": 900,
+          "asr": 0.45024271844660196,
+          "training_time": 7.6022644023178145,
+          "loss": -2.4597902297973633,
+          "gradient_norm": 0.6924230456352234
+        },
+        {
+          "step": 1000,
+          "asr": 0.45091693635382957,
+          "training_time": 8.438055102014914,
+          "loss": -2.5344085693359375,
+          "gradient_norm": 0.7177489995956421
+        },
+        {
+          "step": 1100,
+          "asr": 0.4513214670981661,
+          "training_time": 9.273660602164455,
+          "loss": -2.5630381107330322,
+          "gradient_norm": 0.7071892619132996
+        },
+        {
+          "step": 1200,
+          "asr": 0.450782092772384,
+          "training_time": 10.12474170268979,
+          "loss": -2.8038878440856934,
+          "gradient_norm": 0.6812893152236938
+        },
+        {
+          "step": 1300,
+          "asr": 0.44970334412081986,
+          "training_time": 10.964073302340694,
+          "loss": -2.8366284370422363,
+          "gradient_norm": 0.7413135766983032
+        },
+        {
+          "step": 1400,
+          "asr": 0.45037756202804746,
+          "training_time": 11.812030202010646,
+          "loss": -3.167175531387329,
+          "gradient_norm": 0.813312828540802
+        },
+        {
+          "step": 1500,
+          "asr": 0.45037756202804746,
+          "training_time": 12.65259120229166,
+          "loss": -3.3045201301574707,
+          "gradient_norm": 0.6663769483566284
+        },
+        {
+          "step": 1530,
+          "asr": 0.4499730312837109,
+          "training_time": 12.90688360168133,
+          "loss": -2.422152519226074,
+          "gradient_norm": 0.7603875398635864
+        }
+      ]
+    },
+    {
+      "phase": "ensemble_time",
+      "strategy": "R",
+      "target": 3,
+      "seed": 101,
+      "history": [
+        {
+          "step": 0,
+          "asr": 0.027348394768133173,
+          "training_time": 0.0
+        },
+        {
+          "step": 100,
+          "asr": 0.4482758620689655,
+          "training_time": 0.9512303996598348,
+          "loss": 2.8926892280578613,
+          "gradient_norm": 0.9970978498458862
+        },
+        {
+          "step": 200,
+          "asr": 0.4536266349583829,
+          "training_time": 2.1456710991915315,
+          "loss": 3.0702428817749023,
+          "gradient_norm": 0.7757453918457031
+        },
+        {
+          "step": 300,
+          "asr": 0.45555885850178357,
+          "training_time": 3.34090009983629,
+          "loss": 2.843695640563965,
+          "gradient_norm": 0.7635078430175781
+        },
+        {
+          "step": 400,
+          "asr": 0.460166468489893,
+          "training_time": 4.534850199706852,
+          "loss": 3.0063226222991943,
+          "gradient_norm": 1.064989686012268
+        },
+        {
+          "step": 500,
+          "asr": 0.459423305588585,
+          "training_time": 5.723327199695632,
+          "loss": 2.8984336853027344,
+          "gradient_norm": 1.0593061447143555
+        },
+        {
+          "step": 600,
+          "asr": 0.46046373365041615,
+          "training_time": 6.916990399709903,
+          "loss": 2.5780818462371826,
+          "gradient_norm": 0.9624648094177246
+        },
+        {
+          "step": 700,
+          "asr": 0.4626932223543401,
+          "training_time": 8.103190098889172,
+          "loss": 2.1945276260375977,
+          "gradient_norm": 0.774296760559082
+        },
+        {
+          "step": 800,
+          "asr": 0.46120689655172414,
+          "training_time": 9.120433899573982,
+          "loss": 1.7651625871658325,
+          "gradient_norm": 0.5854464173316956
+        },
+        {
+          "step": 900,
+          "asr": 0.459423305588585,
+          "training_time": 9.992234499542974,
+          "loss": 2.1249468326568604,
+          "gradient_norm": 0.7235469222068787
+        },
+        {
+          "step": 1000,
+          "asr": 0.4646254458977408,
+          "training_time": 10.869451399776153,
+          "loss": 2.852585792541504,
+          "gradient_norm": 0.8449655175209045
+        },
+        {
+          "step": 1100,
+          "asr": 0.46150416171224734,
+          "training_time": 11.734670100035146,
+          "loss": 2.7223010063171387,
+          "gradient_norm": 0.8175515532493591
+        },
+        {
+          "step": 1200,
+          "asr": 0.46120689655172414,
+          "training_time": 12.684772401116788,
+          "loss": 2.562364339828491,
+          "gradient_norm": 0.8487142324447632
+        },
+        {
+          "step": 1220,
+          "asr": 0.4625445897740785,
+          "training_time": 12.929748500930145,
+          "loss": 2.3027448654174805,
+          "gradient_norm": 0.7893062829971313
+        }
+      ]
+    },
+    {
+      "phase": "ensemble_time",
+      "strategy": "V",
+      "target": null,
+      "seed": 101,
+      "history": [
+        {
+          "step": 0,
+          "asr": 0.15064446831364126,
+          "training_time": 0.0
+        },
+        {
+          "step": 100,
+          "asr": 0.6201664876476907,
+          "training_time": 0.7543442997848615,
+          "loss": -3.2411515712738037,
+          "gradient_norm": 1.1804916858673096
+        },
+        {
+          "step": 200,
+          "asr": 0.6450053705692803,
+          "training_time": 1.5357248994987458,
+          "loss": -3.6309261322021484,
+          "gradient_norm": 0.9554179906845093
+        },
+        {
+          "step": 300,
+          "asr": 0.6458109559613319,
+          "training_time": 2.2956523003522307,
+          "loss": -3.9170055389404297,
+          "gradient_norm": 0.9379987120628357
+        },
+        {
+          "step": 400,
+          "asr": 0.6470193340494093,
+          "training_time": 3.0789085004944354,
+          "loss": -3.726292133331299,
+          "gradient_norm": 1.1256214380264282
+        },
+        {
+          "step": 500,
+          "asr": 0.6484962406015038,
+          "training_time": 3.8917517996160313,
+          "loss": -3.7967593669891357,
+          "gradient_norm": 1.1390624046325684
+        },
+        {
+          "step": 600,
+          "asr": 0.6470193340494093,
+          "training_time": 4.643008999526501,
+          "loss": -3.6396710872650146,
+          "gradient_norm": 1.0008376836776733
+        },
+        {
+          "step": 700,
+          "asr": 0.6479591836734694,
+          "training_time": 5.465676399180666,
+          "loss": -4.234596252441406,
+          "gradient_norm": 1.1498726606369019
+        },
+        {
+          "step": 800,
+          "asr": 0.647422126745435,
+          "training_time": 6.421046898700297,
+          "loss": -3.523125648498535,
+          "gradient_norm": 1.0010491609573364
+        },
+        {
+          "step": 900,
+          "asr": 0.646750805585392,
+          "training_time": 7.383488499326631,
+          "loss": -3.7343478202819824,
+          "gradient_norm": 1.121103286743164
+        },
+        {
+          "step": 1000,
+          "asr": 0.6479591836734694,
+          "training_time": 8.303079199045897,
+          "loss": -3.8920016288757324,
+          "gradient_norm": 1.1220139265060425
+        },
+        {
+          "step": 1100,
+          "asr": 0.6464822771213748,
+          "training_time": 9.273776000132784,
+          "loss": -3.564324378967285,
+          "gradient_norm": 0.851027250289917
+        },
+        {
+          "step": 1200,
+          "asr": 0.6475563909774437,
+          "training_time": 10.251826100284234,
+          "loss": -3.4729390144348145,
+          "gradient_norm": 0.9488183856010437
+        },
+        {
+          "step": 1300,
+          "asr": 0.6468850698174007,
+          "training_time": 11.225177300395444,
+          "loss": -3.891294479370117,
+          "gradient_norm": 1.060551643371582
+        },
+        {
+          "step": 1400,
+          "asr": 0.6478249194414608,
+          "training_time": 12.192457600263879,
+          "loss": -4.133024215698242,
+          "gradient_norm": 0.9383437633514404
+        },
+        {
+          "step": 1470,
+          "asr": 0.6471535982814178,
+          "training_time": 12.870766999549232,
+          "loss": -4.477054119110107,
+          "gradient_norm": 1.220176100730896
+        }
+      ]
+    },
+    {
+      "phase": "ensemble_time",
+      "strategy": "V",
+      "target": 3,
+      "seed": 101,
+      "history": [
+        {
+          "step": 0,
+          "asr": 0.024673008323424495,
+          "training_time": 0.0
+        },
+        {
+          "step": 100,
+          "asr": 0.4894470868014269,
+          "training_time": 0.9832273996435106,
+          "loss": 2.6220293045043945,
+          "gradient_norm": 0.9176499247550964
+        },
+        {
+          "step": 200,
+          "asr": 0.4931629013079667,
+          "training_time": 1.9735229993239045,
+          "loss": 2.528797149658203,
+          "gradient_norm": 0.9798760414123535
+        },
+        {
+          "step": 300,
+          "asr": 0.49137931034482757,
+          "training_time": 2.9425584997516125,
+          "loss": 2.70607328414917,
+          "gradient_norm": 0.9962751269340515
+        },
+        {
+          "step": 400,
+          "asr": 0.49004161712247324,
+          "training_time": 3.907357300282456,
+          "loss": 2.7463197708129883,
+          "gradient_norm": 1.089168667793274
+        },
+        {
+          "step": 500,
+          "asr": 0.49241973840665876,
+          "training_time": 4.8736394996521994,
+          "loss": 2.305025577545166,
+          "gradient_norm": 0.9828307032585144
+        },
+        {
+          "step": 600,
+          "asr": 0.49137931034482757,
+          "training_time": 5.8444969995180145,
+          "loss": 2.2901716232299805,
+          "gradient_norm": 0.8523428440093994
+        },
+        {
+          "step": 700,
+          "asr": 0.4884066587395957,
+          "training_time": 6.805881299311295,
+          "loss": 2.28585147857666,
+          "gradient_norm": 0.8979136943817139
+        },
+        {
+          "step": 800,
+          "asr": 0.4881093935790725,
+          "training_time": 7.55146589979995,
+          "loss": 1.8536056280136108,
+          "gradient_norm": 0.7577911019325256
+        },
+        {
+          "step": 900,
+          "asr": 0.48974435196195004,
+          "training_time": 8.30313249968458,
+          "loss": 2.243316173553467,
+          "gradient_norm": 0.8083900809288025
+        },
+        {
+          "step": 1000,
+          "asr": 0.49137931034482757,
+          "training_time": 9.091587298549712,
+          "loss": 2.4336891174316406,
+          "gradient_norm": 0.7944548726081848
+        },
+        {
+          "step": 1100,
+          "asr": 0.49004161712247324,
+          "training_time": 9.879147598519921,
+          "loss": 2.417959213256836,
+          "gradient_norm": 0.9226076602935791
+        },
+        {
+          "step": 1200,
+          "asr": 0.49108204518430437,
+          "training_time": 10.652791897533461,
+          "loss": 2.378089189529419,
+          "gradient_norm": 0.8584621548652649
+        },
+        {
+          "step": 1300,
+          "asr": 0.48602853745541025,
+          "training_time": 11.504879498039372,
+          "loss": 2.1357977390289307,
+          "gradient_norm": 0.8424055576324463
+        },
+        {
+          "step": 1400,
+          "asr": 0.4878121284185494,
+          "training_time": 12.473776697879657,
+          "loss": 2.602721929550171,
+          "gradient_norm": 0.7945393919944763
+        },
+        {
+          "step": 1440,
+          "asr": 0.48989298454221164,
+          "training_time": 12.866590197896585,
+          "loss": 2.2857513427734375,
+          "gradient_norm": 0.8774413466453552
+        }
+      ]
+    },
+    {
+      "phase": "ensemble_time",
+      "strategy": "RV",
+      "target": null,
+      "seed": 101,
+      "history": [
+        {
+          "step": 0,
+          "asr": 0.11975319424312052,
+          "training_time": 0.0
+        },
+        {
+          "step": 100,
+          "asr": 0.45839619274724025,
+          "training_time": 1.2858794992789626,
+          "loss": -2.219508647918701,
+          "gradient_norm": 0.5461581349372864
+        },
+        {
+          "step": 200,
+          "asr": 0.4643938353743814,
+          "training_time": 2.625956598785706,
+          "loss": -1.9976646900177002,
+          "gradient_norm": 0.6184293627738953
+        },
+        {
+          "step": 300,
+          "asr": 0.46779816508446337,
+          "training_time": 4.148718098876998,
+          "loss": -2.684782028198242,
+          "gradient_norm": 0.5831014513969421
+        },
+        {
+          "step": 400,
+          "asr": 0.47117302039194153,
+          "training_time": 5.7992821000516415,
+          "loss": -2.2908265590667725,
+          "gradient_norm": 0.6708831191062927
+        },
+        {
+          "step": 500,
+          "asr": 0.4688231066570726,
+          "training_time": 7.4530962004791945,
+          "loss": -2.235867500305176,
+          "gradient_norm": 0.6411604881286621
+        },
+        {
+          "step": 600,
+          "asr": 0.4684200242863284,
+          "training_time": 9.095568399992771,
+          "loss": -2.5185625553131104,
+          "gradient_norm": 0.6110899448394775
+        },
+        {
+          "step": 700,
+          "asr": 0.4670064840788981,
+          "training_time": 10.677091599674895,
+          "loss": -2.61995267868042,
+          "gradient_norm": 0.698308527469635
+        },
+        {
+          "step": 800,
+          "asr": 0.46733808921286113,
+          "training_time": 11.92358589998912,
+          "loss": -2.442674160003662,
+          "gradient_norm": 0.5942960381507874
+        },
+        {
+          "step": 880,
+          "asr": 0.4683401464827116,
+          "training_time": 12.908148900954984,
+          "loss": -2.256387233734131,
+          "gradient_norm": 0.5114533305168152
+        }
+      ]
+    },
+    {
+      "phase": "ensemble_time",
+      "strategy": "RV",
+      "target": 3,
+      "seed": 101,
+      "history": [
+        {
+          "step": 0,
+          "asr": 0.026010701545778836,
+          "training_time": 0.0
+        },
+        {
+          "step": 100,
+          "asr": 0.3983353151010701,
+          "training_time": 1.6270535006187856,
+          "loss": 3.290158748626709,
+          "gradient_norm": 1.0581670999526978
+        },
+        {
+          "step": 200,
+          "asr": 0.4077734839476813,
+          "training_time": 3.2459779005730525,
+          "loss": 3.302912473678589,
+          "gradient_norm": 1.0313160419464111
+        },
+        {
+          "step": 300,
+          "asr": 0.40740190249702735,
+          "training_time": 4.863662101095542,
+          "loss": 3.366194486618042,
+          "gradient_norm": 1.0432080030441284
+        },
+        {
+          "step": 400,
+          "asr": 0.4061385255648038,
+          "training_time": 6.294325200840831,
+          "loss": 3.525315284729004,
+          "gradient_norm": 1.164534568786621
+        },
+        {
+          "step": 500,
+          "asr": 0.40450356718192626,
+          "training_time": 7.710355901042931,
+          "loss": 3.2406272888183594,
+          "gradient_norm": 1.129728078842163
+        },
+        {
+          "step": 600,
+          "asr": 0.40598989298454224,
+          "training_time": 9.126174001023173,
+          "loss": 2.9453418254852295,
+          "gradient_norm": 1.0038326978683472
+        },
+        {
+          "step": 700,
+          "asr": 0.4050237812128419,
+          "training_time": 10.796408600872383,
+          "loss": 2.881420612335205,
+          "gradient_norm": 1.1952593326568604
+        },
+        {
+          "step": 800,
+          "asr": 0.4074762187871581,
+          "training_time": 12.457601902307943,
+          "loss": 2.2887344360351562,
+          "gradient_norm": 0.8343704342842102
+        },
+        {
+          "step": 830,
+          "asr": 0.4069560047562426,
+          "training_time": 12.96750890207477,
+          "loss": 3.06203556060791,
+          "gradient_norm": 1.0086047649383545
+        }
+      ]
+    }
+  ]
+}

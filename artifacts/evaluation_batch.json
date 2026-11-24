@@ -1,0 +1,67 @@
+{
+  "batch_size": 128,
+  "reference_batch": 128,
+  "candidate_batch": 512,
+  "checks": [
+    {
+      "model": "resnet20",
+      "defense": null,
+      "draws": 8,
+      "identical_predictions_and_conditions": false,
+      "alpha_area_equivalent": true,
+      "differing_patched_predictions": 6,
+      "checkpoint_hash": "88c98d6ce875673806386527c75ae17e8ffd795c00413155c360468812f3dacc"
+    },
+    {
+      "model": "vgg11_bn_cifar",
+      "defense": null,
+      "draws": 8,
+      "identical_predictions_and_conditions": false,
+      "alpha_area_equivalent": true,
+      "differing_patched_predictions": 3,
+      "checkpoint_hash": "2d68f337912f570179fdba4b8a9f65787e7ce72a770cc72b752afb95f5600e0a"
+    },
+    {
+      "model": "resnet20",
+      "defense": {
+        "type": "gaussian",
+        "sigma": 0.5
+      },
+      "draws": 8,
+      "identical_predictions_and_conditions": false,
+      "alpha_area_equivalent": true,
+      "differing_patched_predictions": 1,
+      "checkpoint_hash": "88c98d6ce875673806386527c75ae17e8ffd795c00413155c360468812f3dacc"
+    },
+    {
+      "model": "resnet20",
+      "defense": {
+        "type": "resize_pad",
+        "sizes": [
+          30,
+          31,
+          32
+        ]
+      },
+      "draws": 8,
+      "identical_predictions_and_conditions": false,
+      "alpha_area_equivalent": true,
+      "differing_patched_predictions": 5,
+      "checkpoint_hash": "88c98d6ce875673806386527c75ae17e8ffd795c00413155c360468812f3dacc"
+    },
+    {
+      "model": "densenet_bc40_k12",
+      "defense": null,
+      "draws": 1,
+      "identical_predictions_and_conditions": true,
+      "alpha_area_equivalent": true,
+      "differing_patched_predictions": 0,
+      "checkpoint_hash": "6c7e8c3b90188a6ea44de160c9407d4adce50ba4be1997b209603e229ca9ff51"
+    }
+  ],
+  "rule": "Use 512 only when all validation predictions and random conditions match; otherwise retain 128.",
+  "patch_hash": "0c32ced6a85224a7f67505f29dc7d53441035361f488a9b4785843a643264cc1",
+  "heldout_attack_feedback_used": false,
+  "heldout_check": "clean images only",
+  "scope": "mechanical batching, not method/patch/model selection; full 5000 validation images"
+}

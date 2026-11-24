@@ -1,0 +1,95 @@
+{
+  "requirements": {
+    "R01": {
+      "requirement": "Shared patch generation",
+      "implementation": [
+        "src/patches/render.py",
+        "src/patches/optimize.py"
+      ],
+      "evidence": [
+        "artifacts/patches",
+        "results/validation_audit.json"
+      ]
+    },
+    "R02": {
+      "requirement": "Untargeted sides 3/5/7/16",
+      "evidence": [
+        "results/figures/B_size_and_targets.pdf",
+        "results/tables/seed_summaries.csv"
+      ]
+    },
+    "R03": {
+      "requirement": "All ten targeted classes at each size",
+      "evidence": [
+        "results/tables/per_seed_metrics.csv",
+        "Supplementary_Results.pdf"
+      ]
+    },
+    "R04": {
+      "requirement": "Textures and fixed success/failure cases",
+      "evidence": [
+        "results/figures/B_patch_gallery.pdf",
+        "results/figures/B_fixed_examples.pdf",
+        "results/tables/patch_characteristics.csv"
+      ]
+    },
+    "R05": {
+      "requirement": "Unmodified transfer to VGG and DenseNet",
+      "evidence": [
+        "results/tables/seed_summaries.csv",
+        "results/evaluation_audit.json"
+      ]
+    },
+    "R06": {
+      "requirement": "Two-source extension under step/time budgets",
+      "evidence": [
+        "results/figures/C_heldout_comparison.pdf",
+        "results/figures/C_targets_and_sources.pdf",
+        "results/figures/C_validation_time_curves.pdf",
+        "results/tables/paired_effects.csv"
+      ]
+    },
+    "R07": {
+      "requirement": "Defense cost, nonadaptive/adaptive and EOT-matched controls",
+      "evidence": [
+        "results/figures/D_three_paths.pdf",
+        "results/figures/D_all_targets.pdf",
+        "results/figures/D_cost_tradeoff.pdf",
+        "results/figures/D_strength_checks.pdf"
+      ]
+    },
+    "R08": {
+      "requirement": "Two extensions and planned four-person responsibilities",
+      "evidence": [
+        "Formal_Report.pdf",
+        "PRESENTATION_AND_QA_CN.txt"
+      ],
+      "scope": "Planned A/B/C/D roles are documented. Actual individual effort, attendance and presentation cannot be verified by generated artifacts."
+    },
+    "R09": {
+      "requirement": "Three independent patch seeds",
+      "evidence": [
+        "artifacts/matrix.json",
+        "results/tables/target_macros_per_seed.csv",
+        "results/tables/paired_effects.csv"
+      ]
+    }
+  },
+  "coverage": {
+    "main_patches": 561,
+    "strength_patches": 24,
+    "full_validation_evaluations": 1212,
+    "test_evaluations": 1638,
+    "draws8_evaluations": 1626,
+    "draws32_evaluations": 12
+  },
+  "remaining_student_activities": [
+    "poster printing and scheduled presentation",
+    "individual Q&A and course peer review"
+  ],
+  "measurement_limitations": [
+    "No independent classifier-training repeats",
+    "No separately measured GPU-kernel-active time",
+    "No physical or certified robustness experiment"
+  ]
+}

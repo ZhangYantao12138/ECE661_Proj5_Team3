@@ -1,0 +1,5 @@
+{
+  "stage": "all_three_classifiers",
+  "status": "completed",
+  "epochs_each": 200
+}

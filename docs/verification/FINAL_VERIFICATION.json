@@ -1,0 +1,81 @@
+{
+  "status": "verified",
+  "manifest_files": 51,
+  "pdf_pages": {
+    "A_Chinese_Guide.pdf": 7,
+    "B_Chinese_Guide.pdf": 8,
+    "C_Chinese_Guide.pdf": 9,
+    "D_Chinese_Guide.pdf": 11,
+    "ECE661_Poster.pdf": 1,
+    "Formal_Report.pdf": 7,
+    "Supplementary_Results.pdf": 11
+  },
+  "archives": {
+    "A_Code.zip": {
+      "members": 84,
+      "patches": 0,
+      "crc": "passed"
+    },
+    "B_Code.zip": {
+      "members": 600,
+      "patches": 132,
+      "crc": "passed"
+    },
+    "C_Code.zip": {
+      "members": 996,
+      "patches": 231,
+      "crc": "passed"
+    },
+    "D_Code.zip": {
+      "members": 960,
+      "patches": 222,
+      "crc": "passed"
+    },
+    "CIFAR10_Dataset.zip": {
+      "official_md5": "c58f30108f718f92721af3b95e74349a",
+      "crc": "passed"
+    },
+    "Shared_Results.zip": {
+      "members": 5888,
+      "test_conditions": 1638,
+      "full_validation_conditions": 1212,
+      "crc": "passed"
+    }
+  },
+  "full_archive_sha256": "0f0c8910f76edd0d62dff97d2763ebba13c20eab1b5e5f2afda399bf31175e8f",
+  "full_archive_bytes": 5151310519,
+  "verified_utc": "2026-11-21T19:01:34.083558+00:00",
+  "packaged_code_checks": {
+    "status": "verified",
+    "archives_sha256": {
+      "A_Code.zip": "472bbe0a04e067a3e910784943496e05e0d5aa2667673564aab44020b2e052ef",
+      "B_Code.zip": "0266fe7a50ec8294f12898a9956a6cca6a1b1b0566dd7dbff4cc656a92017c8f",
+      "C_Code.zip": "5aad24f54fa395e4e08e8b52a451a148d4df00104af666d30d4a53d0f47ae685",
+      "D_Code.zip": "cc523ce51e4a3e0253935dd2c42012edae7323b5dbe74ce4d4ac16034efba98a"
+    },
+    "fresh_extraction": "C:\\Users\\Russo Zhang\\Documents\\Codex\\2026-11-20\\ece661-ece661-team3-implementation-plans-zip\\tmp\\packaged_code_smoke_20261121_135953\\ECE661_Project",
+    "checks": {
+      "tests": {
+        "status": "passed",
+        "log": "outputs\\verification_logs\\packaged_tests.log"
+      },
+      "patch_audit": {
+        "status": "passed",
+        "log": "outputs\\verification_logs\\packaged_patch_audit.log"
+      },
+      "frozen_identity": {
+        "status": "passed",
+        "log": "outputs\\verification_logs\\packaged_frozen_identity.log"
+      }
+    },
+    "passed_tests": 26,
+    "complete_patch_artifacts": 585
+  },
+  "code_and_documents_archive": {
+    "status": "verified",
+    "bytes": 49995322,
+    "sha256": "9ee8a9589df549d76f501ca3132f1fa1cd77cb50a95836f897e8615ca6d9d4df",
+    "manifest_files": 47,
+    "scope": "Convenience code/document archive; complete raw records and dataset are in the full delivery."
+  }
+}

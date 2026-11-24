@@ -1,0 +1,6 @@
+# Document generation used bundled Python 3.12.14; scientific computation used
+# the separate host environment in requirements-local-tested.txt.
+reportlab==4.4.9
+pypdf==6.21.4
+# External tools (not pip packages): Tectonic 0.17.0+20260731, Poppler 26.07.0.
+# Chinese PDFs use installed SimHei TrueType; no system font is redistributed.

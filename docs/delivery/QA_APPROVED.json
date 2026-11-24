@@ -1,0 +1,94 @@
+{
+  "status": "visually_reviewed",
+  "reviewed_utc": "2026-11-21T18:54:02.094350+00:00",
+  "method": "Poppler PNG render of every final page; visual inspection of text, glyphs, figures, tables, bounds, page flow and footer. Dense chart page additionally reviewed at 1500-pixel height.",
+  "files": {
+    "A_Chinese_Guide.pdf": "faca62cd1ebcf49e2517d98acbac106dc84e3b62b45edc180eb4e78786f02a84",
+    "B_Chinese_Guide.pdf": "9f63d1b2eafc16bed163f285f2919e0d948dffbef58896cb530e92ccd5222440",
+    "C_Chinese_Guide.pdf": "79819e0878ac13869a4e4d6bc0818734e4b487ec5b207e3f24c11c62f6562ac8",
+    "D_Chinese_Guide.pdf": "c18ec2401045b1f9463b84f9cc45337183ff479817ac2bed3e45faa4cf934497",
+    "ECE661_Poster.pdf": "a3534a8cabfaafc859743da754cc5bc366bc997cf576bbc3630053a99e53e760",
+    "Formal_Report.pdf": "9165b75e1a716e84efba0fe52ee09da60ea6bbd3591a074296afe50cde9963c2",
+    "Supplementary_Results.pdf": "5186cc7c9b333d3c179eff59f852f2763c007cbb069057a3c2d3536836f62d8a"
+  },
+  "reviewed_pages": {
+    "A_Chinese_Guide.pdf": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "B_Chinese_Guide.pdf": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "C_Chinese_Guide.pdf": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "D_Chinese_Guide.pdf": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "ECE661_Poster.pdf": [
+      1
+    ],
+    "Formal_Report.pdf": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "Supplementary_Results.pdf": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "total_reviewed_pages": 54,
+  "formal_report_body_pages": 6,
+  "formal_report_reference_pages": 1,
+  "repairs": [
+    "Reduced repeated prose to retain six body pages without reducing font size or omitting scientific results.",
+    "Normalized unsupported Unicode minus/dashes in Chinese paragraphs; all non-code paragraph glyphs checked against embedded SimHei coverage.",
+    "Added space before shaded code blocks to prevent table overlap.",
+    "Separated figure environments from prose paragraphs to prevent a sentence being split around a float."
+  ],
+  "unresolved_layout_issues": []
+}

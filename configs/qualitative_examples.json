@@ -1,0 +1,10 @@
+{
+  "selection_rule": "First twelve official test IDs in their original order; fixed before final test evaluation. No selection by success.",
+  "image_ids": [0,1,2,3,4,5,6,7,8,9,10,11],
+  "main_report_image_ids": [0,1,2,3,4,5],
+  "patch_run_id": "basic__R__s7__t3__seed101__k1",
+  "eval_model": "resnet20",
+  "draw_id": 0,
+  "eval_seed": 6610,
+  "training_defense_illustration_image": 0
+}

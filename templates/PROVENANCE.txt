@@ -1,0 +1,11 @@
+The NeurIPS 2026 style is the unmodified style file supplied by the official paper-template archive:
+https://media.neurips.cc/Conferences/NeurIPS2026/Formatting_Instructions_For_NeurIPS_2026.zip
+It is used for an ECE661 course report, with an explicit course-project notice rather than a conference-publication claim.
+
+The poster PDF and structured presentation snapshot come from the course-provided ECE661 Poster Template:
+https://docs.google.com/presentation/d/1D9gM-Gb3CW8cTe6GQGcpErWOmkpWLYDzbSPcn1TJ0yY/edit
+Template sample text and figures are replaced; the provided Duke branding is preserved.
+duke_brand.png is a faithful 600-dpi crop of only the protected Duke group from
+the source PDF (source rectangle x=610..720, y=345..405 points). This prevents
+invisible original placeholder text from surviving a clipped PDF-page merge.
+The original template and referenced works retain their respective ownership and attribution.

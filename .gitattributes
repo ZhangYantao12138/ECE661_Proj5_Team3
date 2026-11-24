@@ -1,0 +1,2 @@
+# Frozen JSON identities and source provenance require exact bytes on every OS.
+* -text

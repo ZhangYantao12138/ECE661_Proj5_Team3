@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "kind": "synthetic mechanical equivalence check, not research results",
+  "images": 19,
+  "draws": 8,
+  "batch_size": 4,
+  "checks": [
+    {
+      "defense": "identity",
+      "patch": false,
+      "target": null,
+      "all_fields_and_dtypes_exact": true
+    },
+    {
+      "defense": "identity",
+      "patch": true,
+      "target": null,
+      "all_fields_and_dtypes_exact": true
+    },
+    {
+      "defense": "identity",
+      "patch": true,
+      "target": 3,
+      "all_fields_and_dtypes_exact": true
+    },
+    {
+      "defense": "gaussian",
+      "patch": false,
+      "target": null,
+      "all_fields_and_dtypes_exact": true
+    },
+    {
+      "defense": "gaussian",
+      "patch": true,
+      "target": null,
+      "all_fields_and_dtypes_exact": true
+    },
+    {
+      "defense": "gaussian",
+      "patch": true,
+      "target": 3,
+      "all_fields_and_dtypes_exact": true
+    },
+    {
+      "defense": "resize_pad",
+      "patch": false,
+      "target": null,
+      "all_fields_and_dtypes_exact": true
+    },
+    {
+      "defense": "resize_pad",
+      "patch": true,
+      "target": null,
+      "all_fields_and_dtypes_exact": true
+    },
+    {
+      "defense": "resize_pad",
+      "patch": true,
+      "target": 3,
+      "all_fields_and_dtypes_exact": true
+    }
+  ]
+}

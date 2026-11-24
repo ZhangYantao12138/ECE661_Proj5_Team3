@@ -1,0 +1,1005 @@
+{
+  "status": "complete",
+  "n_patches": 99,
+  "checks": [
+    "patch/config/source/split/protocol hashes",
+    "pixels finite and bounded",
+    "final candidate validated",
+    "earliest maximum selection",
+    "actual budget reached",
+    "ten-update stop boundary",
+    "source calls and image counts"
+  ],
+  "records": [
+    {
+      "run_id": "ensemble_time__R__s7__tNone__seed101__k1",
+      "strategy": "R",
+      "total_steps": 1530,
+      "selected_step": 300,
+      "training_time_s": 12.90688360168133,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.07404759351629764,
+      "forward_backward_calls": 1530
+    },
+    {
+      "run_id": "ensemble_time__V__s7__tNone__seed101__k1",
+      "strategy": "V",
+      "total_steps": 1470,
+      "selected_step": 500,
+      "training_time_s": 12.870766999549232,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.03793099138420075,
+      "forward_backward_calls": 1470
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__tNone__seed101__k1",
+      "strategy": "RV",
+      "total_steps": 880,
+      "selected_step": 400,
+      "training_time_s": 12.908148900954984,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.07531289278995246,
+      "forward_backward_calls": 1760
+    },
+    {
+      "run_id": "ensemble_time__R__s7__tNone__seed102__k1",
+      "strategy": "R",
+      "total_steps": 1540,
+      "selected_step": 800,
+      "training_time_s": 12.909341699909419,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.07650569174438715,
+      "forward_backward_calls": 1540
+    },
+    {
+      "run_id": "ensemble_time__V__s7__tNone__seed102__k1",
+      "strategy": "V",
+      "total_steps": 1600,
+      "selected_step": 1200,
+      "training_time_s": 12.9299136986956,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.09707769053056836,
+      "forward_backward_calls": 1600
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__tNone__seed102__k1",
+      "strategy": "RV",
+      "total_steps": 950,
+      "selected_step": 900,
+      "training_time_s": 12.850736198481172,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.01790019031614065,
+      "forward_backward_calls": 1900
+    },
+    {
+      "run_id": "ensemble_time__R__s7__tNone__seed103__k1",
+      "strategy": "R",
+      "total_steps": 1510,
+      "selected_step": 900,
+      "training_time_s": 12.887222199933603,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.054386191768571734,
+      "forward_backward_calls": 1510
+    },
+    {
+      "run_id": "ensemble_time__V__s7__tNone__seed103__k1",
+      "strategy": "V",
+      "total_steps": 1400,
+      "selected_step": 100,
+      "training_time_s": 12.870119999861345,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.037283991696313024,
+      "forward_backward_calls": 1400
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__tNone__seed103__k1",
+      "strategy": "RV",
+      "total_steps": 850,
+      "selected_step": 700,
+      "training_time_s": 12.851030698278919,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.01819469011388719,
+      "forward_backward_calls": 1700
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t0__seed101__k1",
+      "strategy": "R",
+      "total_steps": 1190,
+      "selected_step": 1100,
+      "training_time_s": 12.85944450320676,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.02660849504172802,
+      "forward_backward_calls": 1190
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t0__seed101__k1",
+      "strategy": "V",
+      "total_steps": 1400,
+      "selected_step": 900,
+      "training_time_s": 12.902923201909289,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.07008719374425709,
+      "forward_backward_calls": 1400
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t0__seed101__k1",
+      "strategy": "RV",
+      "total_steps": 1000,
+      "selected_step": 100,
+      "training_time_s": 12.854709997656755,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.021873989491723478,
+      "forward_backward_calls": 2000
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t0__seed102__k1",
+      "strategy": "R",
+      "total_steps": 1310,
+      "selected_step": 1300,
+      "training_time_s": 12.901077602989972,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.06824159482493997,
+      "forward_backward_calls": 1310
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t0__seed102__k1",
+      "strategy": "V",
+      "total_steps": 1660,
+      "selected_step": 700,
+      "training_time_s": 12.894629503949545,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.06179349578451365,
+      "forward_backward_calls": 1660
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t0__seed102__k1",
+      "strategy": "RV",
+      "total_steps": 860,
+      "selected_step": 860,
+      "training_time_s": 12.965388400829397,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.13255239266436547,
+      "forward_backward_calls": 1720
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t0__seed103__k1",
+      "strategy": "R",
+      "total_steps": 1250,
+      "selected_step": 300,
+      "training_time_s": 12.855788500397466,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.02295249223243445,
+      "forward_backward_calls": 1250
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t0__seed103__k1",
+      "strategy": "V",
+      "total_steps": 1540,
+      "selected_step": 1100,
+      "training_time_s": 12.853869201266207,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.02103319310117513,
+      "forward_backward_calls": 1540
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t0__seed103__k1",
+      "strategy": "RV",
+      "total_steps": 1020,
+      "selected_step": 100,
+      "training_time_s": 12.92788410175126,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.09504809358622879,
+      "forward_backward_calls": 2040
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t1__seed101__k1",
+      "strategy": "R",
+      "total_steps": 1190,
+      "selected_step": 900,
+      "training_time_s": 12.88137419486884,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.048538186703808606,
+      "forward_backward_calls": 1190
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t1__seed101__k1",
+      "strategy": "V",
+      "total_steps": 1430,
+      "selected_step": 400,
+      "training_time_s": 12.90279320103582,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.06995719287078828,
+      "forward_backward_calls": 1430
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t1__seed101__k1",
+      "strategy": "RV",
+      "total_steps": 960,
+      "selected_step": 960,
+      "training_time_s": 12.836464500287548,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.003628492122516036,
+      "forward_backward_calls": 1920
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t1__seed102__k1",
+      "strategy": "R",
+      "total_steps": 1210,
+      "selected_step": 1000,
+      "training_time_s": 12.836112701916136,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.003276693751104176,
+      "forward_backward_calls": 1210
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t1__seed102__k1",
+      "strategy": "V",
+      "total_steps": 1460,
+      "selected_step": 1000,
+      "training_time_s": 12.881096997181885,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.04826098901685327,
+      "forward_backward_calls": 1460
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t1__seed102__k1",
+      "strategy": "RV",
+      "total_steps": 850,
+      "selected_step": 600,
+      "training_time_s": 12.835814501391724,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.0029784932266920805,
+      "forward_backward_calls": 1700
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t1__seed103__k1",
+      "strategy": "R",
+      "total_steps": 1180,
+      "selected_step": 400,
+      "training_time_s": 12.847126599634066,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.014290591469034553,
+      "forward_backward_calls": 1180
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t1__seed103__k1",
+      "strategy": "V",
+      "total_steps": 1420,
+      "selected_step": 1200,
+      "training_time_s": 12.916161301662214,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.08332529349718243,
+      "forward_backward_calls": 1420
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t1__seed103__k1",
+      "strategy": "RV",
+      "total_steps": 840,
+      "selected_step": 800,
+      "training_time_s": 12.95932129980065,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.1264852916356176,
+      "forward_backward_calls": 1680
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t2__seed101__k1",
+      "strategy": "R",
+      "total_steps": 1220,
+      "selected_step": 1220,
+      "training_time_s": 12.83636369521264,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.0035276870476081967,
+      "forward_backward_calls": 1220
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t2__seed101__k1",
+      "strategy": "V",
+      "total_steps": 1460,
+      "selected_step": 1300,
+      "training_time_s": 12.880211704177782,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.04737569601275027,
+      "forward_backward_calls": 1460
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t2__seed101__k1",
+      "strategy": "RV",
+      "total_steps": 880,
+      "selected_step": 700,
+      "training_time_s": 12.88625990098808,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.053423892823047936,
+      "forward_backward_calls": 1760
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t2__seed102__k1",
+      "strategy": "R",
+      "total_steps": 1430,
+      "selected_step": 1300,
+      "training_time_s": 12.87392480392009,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.04108879575505853,
+      "forward_backward_calls": 1430
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t2__seed102__k1",
+      "strategy": "V",
+      "total_steps": 1540,
+      "selected_step": 1540,
+      "training_time_s": 12.880434400751255,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.04759839258622378,
+      "forward_backward_calls": 1540
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t2__seed102__k1",
+      "strategy": "RV",
+      "total_steps": 880,
+      "selected_step": 880,
+      "training_time_s": 12.86769310082309,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.03485709265805781,
+      "forward_backward_calls": 1760
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t2__seed103__k1",
+      "strategy": "R",
+      "total_steps": 1520,
+      "selected_step": 600,
+      "training_time_s": 12.855802401085384,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.02296639292035252,
+      "forward_backward_calls": 1520
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t2__seed103__k1",
+      "strategy": "V",
+      "total_steps": 1460,
+      "selected_step": 1400,
+      "training_time_s": 12.853404398192652,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.0205683900276199,
+      "forward_backward_calls": 1460
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t2__seed103__k1",
+      "strategy": "RV",
+      "total_steps": 1000,
+      "selected_step": 800,
+      "training_time_s": 12.871714900946245,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.038878892781212926,
+      "forward_backward_calls": 2000
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t3__seed101__k1",
+      "strategy": "R",
+      "total_steps": 1220,
+      "selected_step": 1000,
+      "training_time_s": 12.929748500930145,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.09691249276511371,
+      "forward_backward_calls": 1220
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t3__seed101__k1",
+      "strategy": "V",
+      "total_steps": 1440,
+      "selected_step": 200,
+      "training_time_s": 12.866590197896585,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.0337541897315532,
+      "forward_backward_calls": 1440
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t3__seed101__k1",
+      "strategy": "RV",
+      "total_steps": 830,
+      "selected_step": 200,
+      "training_time_s": 12.96750890207477,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.13467289390973747,
+      "forward_backward_calls": 1660
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t3__seed102__k1",
+      "strategy": "R",
+      "total_steps": 1400,
+      "selected_step": 1400,
+      "training_time_s": 12.89636359794531,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.0635275897802785,
+      "forward_backward_calls": 1400
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t3__seed102__k1",
+      "strategy": "V",
+      "total_steps": 1710,
+      "selected_step": 600,
+      "training_time_s": 12.881558596622199,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.04872258845716715,
+      "forward_backward_calls": 1710
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t3__seed102__k1",
+      "strategy": "RV",
+      "total_steps": 1010,
+      "selected_step": 400,
+      "training_time_s": 12.85468860133551,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.02185259317047894,
+      "forward_backward_calls": 2020
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t3__seed103__k1",
+      "strategy": "R",
+      "total_steps": 1270,
+      "selected_step": 800,
+      "training_time_s": 12.840214197756723,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.007378189591690898,
+      "forward_backward_calls": 1270
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t3__seed103__k1",
+      "strategy": "V",
+      "total_steps": 1690,
+      "selected_step": 400,
+      "training_time_s": 12.897279497236013,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.06444348907098174,
+      "forward_backward_calls": 1690
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t3__seed103__k1",
+      "strategy": "RV",
+      "total_steps": 900,
+      "selected_step": 500,
+      "training_time_s": 12.862769500352442,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.029933492187410593,
+      "forward_backward_calls": 1800
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t4__seed101__k1",
+      "strategy": "R",
+      "total_steps": 1190,
+      "selected_step": 1100,
+      "training_time_s": 12.877858799067326,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.04502279090229422,
+      "forward_backward_calls": 1190
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t4__seed101__k1",
+      "strategy": "V",
+      "total_steps": 1690,
+      "selected_step": 1000,
+      "training_time_s": 12.887777200550772,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.05494119238574058,
+      "forward_backward_calls": 1690
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t4__seed101__k1",
+      "strategy": "RV",
+      "total_steps": 1020,
+      "selected_step": 1000,
+      "training_time_s": 12.943908802466467,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.11107279430143535,
+      "forward_backward_calls": 2040
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t4__seed102__k1",
+      "strategy": "R",
+      "total_steps": 1340,
+      "selected_step": 1100,
+      "training_time_s": 12.910884198150598,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.07804818998556584,
+      "forward_backward_calls": 1340
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t4__seed102__k1",
+      "strategy": "V",
+      "total_steps": 1450,
+      "selected_step": 0,
+      "training_time_s": 12.836355498875491,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.0035194907104596496,
+      "forward_backward_calls": 1450
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t4__seed102__k1",
+      "strategy": "RV",
+      "total_steps": 890,
+      "selected_step": 200,
+      "training_time_s": 12.896254698745906,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.06341869058087468,
+      "forward_backward_calls": 1780
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t4__seed103__k1",
+      "strategy": "R",
+      "total_steps": 1220,
+      "selected_step": 900,
+      "training_time_s": 12.842293601250276,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.009457593085244298,
+      "forward_backward_calls": 1220
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t4__seed103__k1",
+      "strategy": "V",
+      "total_steps": 1430,
+      "selected_step": 400,
+      "training_time_s": 12.9010106024798,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.06817459431476891,
+      "forward_backward_calls": 1430
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t4__seed103__k1",
+      "strategy": "RV",
+      "total_steps": 1020,
+      "selected_step": 400,
+      "training_time_s": 12.954316196264699,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.12148018809966743,
+      "forward_backward_calls": 2040
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t5__seed101__k1",
+      "strategy": "R",
+      "total_steps": 1500,
+      "selected_step": 1500,
+      "training_time_s": 12.89940209838096,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.06656609021592885,
+      "forward_backward_calls": 1500
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t5__seed101__k1",
+      "strategy": "V",
+      "total_steps": 1440,
+      "selected_step": 100,
+      "training_time_s": 12.838705799658783,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.005869791493751109,
+      "forward_backward_calls": 1440
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t5__seed101__k1",
+      "strategy": "RV",
+      "total_steps": 870,
+      "selected_step": 500,
+      "training_time_s": 12.833994296845049,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.0011582886800169945,
+      "forward_backward_calls": 1740
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t5__seed102__k1",
+      "strategy": "R",
+      "total_steps": 1350,
+      "selected_step": 1100,
+      "training_time_s": 12.919288999517448,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.08645299135241657,
+      "forward_backward_calls": 1350
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t5__seed102__k1",
+      "strategy": "V",
+      "total_steps": 1420,
+      "selected_step": 1000,
+      "training_time_s": 12.883223601267673,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.050387593102641404,
+      "forward_backward_calls": 1420
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t5__seed102__k1",
+      "strategy": "RV",
+      "total_steps": 970,
+      "selected_step": 100,
+      "training_time_s": 12.855215100571513,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.022379092406481504,
+      "forward_backward_calls": 1940
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t5__seed103__k1",
+      "strategy": "R",
+      "total_steps": 1440,
+      "selected_step": 1300,
+      "training_time_s": 12.90454269980546,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.0717066916404292,
+      "forward_backward_calls": 1440
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t5__seed103__k1",
+      "strategy": "V",
+      "total_steps": 1350,
+      "selected_step": 800,
+      "training_time_s": 12.833623099024408,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.0007870908593758941,
+      "forward_backward_calls": 1350
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t5__seed103__k1",
+      "strategy": "RV",
+      "total_steps": 810,
+      "selected_step": 810,
+      "training_time_s": 12.895275800023228,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.06243979185819626,
+      "forward_backward_calls": 1620
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t6__seed101__k1",
+      "strategy": "R",
+      "total_steps": 1060,
+      "selected_step": 600,
+      "training_time_s": 12.937445201911032,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.10460919374600053,
+      "forward_backward_calls": 1060
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t6__seed101__k1",
+      "strategy": "V",
+      "total_steps": 1410,
+      "selected_step": 900,
+      "training_time_s": 12.88930110190995,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.056465093744918704,
+      "forward_backward_calls": 1410
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t6__seed101__k1",
+      "strategy": "RV",
+      "total_steps": 880,
+      "selected_step": 400,
+      "training_time_s": 12.953483501449227,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.12064749328419566,
+      "forward_backward_calls": 1760
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t6__seed102__k1",
+      "strategy": "R",
+      "total_steps": 1050,
+      "selected_step": 500,
+      "training_time_s": 12.901550905779004,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.06871489761397243,
+      "forward_backward_calls": 1050
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t6__seed102__k1",
+      "strategy": "V",
+      "total_steps": 1350,
+      "selected_step": 0,
+      "training_time_s": 12.923322502174415,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.09048649400938302,
+      "forward_backward_calls": 1350
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t6__seed102__k1",
+      "strategy": "RV",
+      "total_steps": 840,
+      "selected_step": 600,
+      "training_time_s": 12.856777198147029,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.023941189981997013,
+      "forward_backward_calls": 1680
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t6__seed103__k1",
+      "strategy": "R",
+      "total_steps": 1240,
+      "selected_step": 1240,
+      "training_time_s": 12.893897700705566,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.06106169254053384,
+      "forward_backward_calls": 1240
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t6__seed103__k1",
+      "strategy": "V",
+      "total_steps": 1320,
+      "selected_step": 800,
+      "training_time_s": 12.906124803936109,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.07328879577107728,
+      "forward_backward_calls": 1320
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t6__seed103__k1",
+      "strategy": "RV",
+      "total_steps": 850,
+      "selected_step": 850,
+      "training_time_s": 12.902840802213177,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.07000479404814541,
+      "forward_backward_calls": 1700
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t7__seed101__k1",
+      "strategy": "R",
+      "total_steps": 1270,
+      "selected_step": 600,
+      "training_time_s": 12.834487398155034,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.0016513899900019169,
+      "forward_backward_calls": 1270
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t7__seed101__k1",
+      "strategy": "V",
+      "total_steps": 1470,
+      "selected_step": 1100,
+      "training_time_s": 12.835209500859492,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.0023734926944598556,
+      "forward_backward_calls": 1470
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t7__seed101__k1",
+      "strategy": "RV",
+      "total_steps": 840,
+      "selected_step": 0,
+      "training_time_s": 12.842958600725979,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.010122592560946941,
+      "forward_backward_calls": 1680
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t7__seed102__k1",
+      "strategy": "R",
+      "total_steps": 1270,
+      "selected_step": 800,
+      "training_time_s": 12.94848760124296,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.11565159307792783,
+      "forward_backward_calls": 1270
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t7__seed102__k1",
+      "strategy": "V",
+      "total_steps": 1440,
+      "selected_step": 1300,
+      "training_time_s": 12.918737501604483,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.08590149343945086,
+      "forward_backward_calls": 1440
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t7__seed102__k1",
+      "strategy": "RV",
+      "total_steps": 830,
+      "selected_step": 400,
+      "training_time_s": 12.991744298371486,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.1589082902064547,
+      "forward_backward_calls": 1660
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t7__seed103__k1",
+      "strategy": "R",
+      "total_steps": 1110,
+      "selected_step": 700,
+      "training_time_s": 12.885830699233338,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.052994691068306565,
+      "forward_backward_calls": 1110
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t7__seed103__k1",
+      "strategy": "V",
+      "total_steps": 1360,
+      "selected_step": 1360,
+      "training_time_s": 12.86650540039409,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.03366939222905785,
+      "forward_backward_calls": 1360
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t7__seed103__k1",
+      "strategy": "RV",
+      "total_steps": 790,
+      "selected_step": 300,
+      "training_time_s": 12.977452500141226,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.14461649197619408,
+      "forward_backward_calls": 1580
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t8__seed101__k1",
+      "strategy": "R",
+      "total_steps": 1080,
+      "selected_step": 700,
+      "training_time_s": 12.881735299015418,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.048899290850386024,
+      "forward_backward_calls": 1080
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t8__seed101__k1",
+      "strategy": "V",
+      "total_steps": 1300,
+      "selected_step": 0,
+      "training_time_s": 12.917416701558977,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.0845806933939457,
+      "forward_backward_calls": 1300
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t8__seed101__k1",
+      "strategy": "RV",
+      "total_steps": 790,
+      "selected_step": 300,
+      "training_time_s": 12.852186104864813,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.019350096699781716,
+      "forward_backward_calls": 1580
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t8__seed102__k1",
+      "strategy": "R",
+      "total_steps": 1080,
+      "selected_step": 500,
+      "training_time_s": 12.897320401621982,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.06448439345695078,
+      "forward_backward_calls": 1080
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t8__seed102__k1",
+      "strategy": "V",
+      "total_steps": 1420,
+      "selected_step": 900,
+      "training_time_s": 12.869380399468355,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.03654439130332321,
+      "forward_backward_calls": 1420
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t8__seed102__k1",
+      "strategy": "RV",
+      "total_steps": 880,
+      "selected_step": 880,
+      "training_time_s": 12.910301501862705,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.07746549369767308,
+      "forward_backward_calls": 1760
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t8__seed103__k1",
+      "strategy": "R",
+      "total_steps": 1240,
+      "selected_step": 1000,
+      "training_time_s": 12.877262098249048,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.04442609008401632,
+      "forward_backward_calls": 1240
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t8__seed103__k1",
+      "strategy": "V",
+      "total_steps": 1450,
+      "selected_step": 0,
+      "training_time_s": 12.879276298335753,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.04644029017072171,
+      "forward_backward_calls": 1450
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t8__seed103__k1",
+      "strategy": "RV",
+      "total_steps": 1030,
+      "selected_step": 200,
+      "training_time_s": 12.882216596626677,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.04938058846164495,
+      "forward_backward_calls": 2060
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t9__seed101__k1",
+      "strategy": "R",
+      "total_steps": 1520,
+      "selected_step": 1300,
+      "training_time_s": 12.909598302096128,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.07676229393109679,
+      "forward_backward_calls": 1520
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t9__seed101__k1",
+      "strategy": "V",
+      "total_steps": 1480,
+      "selected_step": 1100,
+      "training_time_s": 12.84933570038993,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.016499692224897444,
+      "forward_backward_calls": 1480
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t9__seed101__k1",
+      "strategy": "RV",
+      "total_steps": 900,
+      "selected_step": 900,
+      "training_time_s": 12.853988700429909,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.02115269226487726,
+      "forward_backward_calls": 1800
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t9__seed102__k1",
+      "strategy": "R",
+      "total_steps": 1310,
+      "selected_step": 800,
+      "training_time_s": 12.877374307834543,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.044538299669511616,
+      "forward_backward_calls": 1310
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t9__seed102__k1",
+      "strategy": "V",
+      "total_steps": 1630,
+      "selected_step": 900,
+      "training_time_s": 12.892808801261708,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.05997279309667647,
+      "forward_backward_calls": 1630
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t9__seed102__k1",
+      "strategy": "RV",
+      "total_steps": 970,
+      "selected_step": 700,
+      "training_time_s": 12.844612501212396,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.011776493047364056,
+      "forward_backward_calls": 1940
+    },
+    {
+      "run_id": "ensemble_time__R__s7__t9__seed103__k1",
+      "strategy": "R",
+      "total_steps": 1320,
+      "selected_step": 1100,
+      "training_time_s": 12.88375860103406,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.05092259286902845,
+      "forward_backward_calls": 1320
+    },
+    {
+      "run_id": "ensemble_time__V__s7__t9__seed103__k1",
+      "strategy": "V",
+      "total_steps": 1720,
+      "selected_step": 1200,
+      "training_time_s": 12.907041794620454,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.07420578645542264,
+      "forward_backward_calls": 1720
+    },
+    {
+      "run_id": "ensemble_time__RV__s7__t9__seed103__k1",
+      "strategy": "RV",
+      "total_steps": 1030,
+      "selected_step": 400,
+      "training_time_s": 12.845194500288926,
+      "budget_s": 12.832836008165032,
+      "overshoot_s": 0.012358492123894393,
+      "forward_backward_calls": 2060
+    }
+  ]
+}

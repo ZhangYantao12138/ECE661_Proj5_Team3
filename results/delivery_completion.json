@@ -1,0 +1,24 @@
+{
+  "stage": "project_materials",
+  "status": "completed",
+  "updated_utc": "2026-11-21T18:58:15.472587+00:00",
+  "project_root": "C:\\Users\\Russo Zhang\\Documents\\Codex\\2026-11-20\\ece661-ece661-team3-implementation-plans-zip\\work\\recovered_gpu_v2\\ECE661_Local_GPU",
+  "remaining_work": [],
+  "coverage": {
+    "classifiers_200_epochs": 3,
+    "main_patches": 561,
+    "strength_patches": 24,
+    "full_validation_conditions": 1212,
+    "test_conditions": 1638,
+    "final_pdfs": 7,
+    "reviewed_pdf_pages": 54
+  },
+  "verification": {
+    "raw_result_audit": "passed",
+    "fresh_merged_code_tests": 26,
+    "fresh_merged_patch_audit": 585,
+    "frozen_identities": "passed",
+    "pdf_visual_review": "passed"
+  },
+  "archive_note": "Final archive checksum and CRC receipt is outputs/FINAL_VERIFICATION.json outside the archive, avoiding a self-referential checksum."
+}

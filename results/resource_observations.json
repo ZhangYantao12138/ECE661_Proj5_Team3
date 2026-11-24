@@ -1,0 +1,22 @@
+{
+  "observation_utc": "2026-11-21T00:42:21Z",
+  "phase": "defense_adaptive",
+  "interactive_graphics_process_started_local": "2026-11-20 19:38:05 America/New_York",
+  "interactive_graphics_process_started_utc": "2026-11-21T00:38:05Z",
+  "evidence": "Read-only OS process creation time and NVIDIA GPU-context inventory; no other application was modified.",
+  "observed_gpu_utilization_percent": 76,
+  "observed_gpu_memory_mib": 4368,
+  "example_run": "defense_adaptive__R__s7__t6__seed103__k4__gaussian",
+  "example_checkpoint_source_forward_backward_calls": 4000,
+  "example_checkpoint_training_seconds": 199.2034054994583,
+  "interpretation": "A shared graphics workload appeared during fixed-step D optimization, coinciding with increased training wall time. Fixed update/EOT budgets remain unchanged. D runtime values describe observed resource conditions and cannot isolate defense operator overhead.",
+  "matched_time_C_completed_utc": "2026-11-20T23:12:08.175674+00:00",
+  "matched_time_C_precedes_graphics_launch": true,
+  "cause_strength": "Concurrent GPU context and temporal association observed; per-process GPU utilization was not separately measured.",
+  "first_absence_observed_utc": "2026-11-21T01:01:43.347084+00:00",
+  "previous_graphics_process_present_at_followup": false,
+  "followup_gpu_utilization_percent": 41,
+  "followup_gpu_memory_mib": 2663,
+  "followup_gpu_temperature_c": 45.01,
+  "interval_note": "Exact exit time was not observed; process was absent at followup and patch completion speed had increased."
+}

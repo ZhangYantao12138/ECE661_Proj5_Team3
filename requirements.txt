@@ -1,0 +1,8 @@
+torch>=2.5,<3
+numpy>=1.26
+PyYAML>=6
+Pillow>=10
+matplotlib>=3.8
+pytest>=8
+reportlab>=4
+pypdf>=5

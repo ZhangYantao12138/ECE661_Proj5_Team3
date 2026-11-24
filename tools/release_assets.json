@@ -1,0 +1,93 @@
+{
+  "repository": "https://github.com/ZhangYantao12138/ECE661_Proj5_Team3",
+  "tag": "v1.0.0-ece661",
+  "full_archive": {
+    "name": "ECE661_Full_Deliverables.zip",
+    "bytes": 5151310519,
+    "sha256": "0f0c8910f76edd0d62dff97d2763ebba13c20eab1b5e5f2afda399bf31175e8f",
+    "parts": [
+      {
+        "name": "ECE661_Full_Deliverables.zip.part01",
+        "bytes": 1800000000,
+        "sha256": "af8aa53e469f132e1220a944c84414b26cc58cf07fa3ec4918a2726289826402"
+      },
+      {
+        "name": "ECE661_Full_Deliverables.zip.part02",
+        "bytes": 1800000000,
+        "sha256": "01a531abeef9f48a63221c87ad16a5fc8bf4c2105474227b10875e09f22aa34a"
+      },
+      {
+        "name": "ECE661_Full_Deliverables.zip.part03",
+        "bytes": 1551310519,
+        "sha256": "fbcc5379c0cf9d1818afa56b8cf9e465f649d7506255f90de9dd9edfd4a7dadf"
+      }
+    ]
+  },
+  "assets": [
+    {
+      "name": "ECE661_Code_and_Documents.zip",
+      "bytes": 49995322,
+      "sha256": "9ee8a9589df549d76f501ca3132f1fa1cd77cb50a95836f897e8615ca6d9d4df"
+    },
+    {
+      "name": "A_Code.zip",
+      "bytes": 38882156,
+      "sha256": "472bbe0a04e067a3e910784943496e05e0d5aa2667673564aab44020b2e052ef"
+    },
+    {
+      "name": "B_Code.zip",
+      "bytes": 1937538,
+      "sha256": "0266fe7a50ec8294f12898a9956a6cca6a1b1b0566dd7dbff4cc656a92017c8f"
+    },
+    {
+      "name": "C_Code.zip",
+      "bytes": 2318095,
+      "sha256": "5aad24f54fa395e4e08e8b52a451a148d4df00104af666d30d4a53d0f47ae685"
+    },
+    {
+      "name": "D_Code.zip",
+      "bytes": 2216577,
+      "sha256": "cc523ce51e4a3e0253935dd2c42012edae7323b5dbe74ce4d4ac16034efba98a"
+    },
+    {
+      "name": "CIFAR10_Dataset.zip",
+      "bytes": 170498654,
+      "sha256": "4b83d6556fe73e349eaf0926ea8d6739a761298522df5a86d645719bf75c1fb5"
+    },
+    {
+      "name": "A_Chinese_Guide.pdf",
+      "bytes": 385443,
+      "sha256": "faca62cd1ebcf49e2517d98acbac106dc84e3b62b45edc180eb4e78786f02a84"
+    },
+    {
+      "name": "B_Chinese_Guide.pdf",
+      "bytes": 772101,
+      "sha256": "9f63d1b2eafc16bed163f285f2919e0d948dffbef58896cb530e92ccd5222440"
+    },
+    {
+      "name": "C_Chinese_Guide.pdf",
+      "bytes": 613805,
+      "sha256": "79819e0878ac13869a4e4d6bc0818734e4b487ec5b207e3f24c11c62f6562ac8"
+    },
+    {
+      "name": "D_Chinese_Guide.pdf",
+      "bytes": 661878,
+      "sha256": "c18ec2401045b1f9463b84f9cc45337183ff479817ac2bed3e45faa4cf934497"
+    },
+    {
+      "name": "ECE661_Poster.pdf",
+      "bytes": 474593,
+      "sha256": "a3534a8cabfaafc859743da754cc5bc366bc997cf576bbc3630053a99e53e760"
+    },
+    {
+      "name": "Formal_Report.pdf",
+      "bytes": 205954,
+      "sha256": "9165b75e1a716e84efba0fe52ee09da60ea6bbd3591a074296afe50cde9963c2"
+    },
+    {
+      "name": "Supplementary_Results.pdf",
+      "bytes": 420995,
+      "sha256": "5186cc7c9b333d3c179eff59f852f2763c007cbb069057a3c2d3536836f62d8a"
+    }
+  ]
+}

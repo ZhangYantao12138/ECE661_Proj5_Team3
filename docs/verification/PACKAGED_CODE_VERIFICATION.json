@@ -1,0 +1,26 @@
+{
+  "status": "verified",
+  "archives_sha256": {
+    "A_Code.zip": "472bbe0a04e067a3e910784943496e05e0d5aa2667673564aab44020b2e052ef",
+    "B_Code.zip": "0266fe7a50ec8294f12898a9956a6cca6a1b1b0566dd7dbff4cc656a92017c8f",
+    "C_Code.zip": "5aad24f54fa395e4e08e8b52a451a148d4df00104af666d30d4a53d0f47ae685",
+    "D_Code.zip": "cc523ce51e4a3e0253935dd2c42012edae7323b5dbe74ce4d4ac16034efba98a"
+  },
+  "fresh_extraction": "C:\\Users\\Russo Zhang\\Documents\\Codex\\2026-11-20\\ece661-ece661-team3-implementation-plans-zip\\tmp\\packaged_code_smoke_20261121_135953\\ECE661_Project",
+  "checks": {
+    "tests": {
+      "status": "passed",
+      "log": "outputs\\verification_logs\\packaged_tests.log"
+    },
+    "patch_audit": {
+      "status": "passed",
+      "log": "outputs\\verification_logs\\packaged_patch_audit.log"
+    },
+    "frozen_identity": {
+      "status": "passed",
+      "log": "outputs\\verification_logs\\packaged_frozen_identity.log"
+    }
+  },
+  "passed_tests": 26,
+  "complete_patch_artifacts": 585
+}

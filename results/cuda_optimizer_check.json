@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "engineering_check_only": true,
+  "formal_research_evidence": false,
+  "source_hash": "64c5aae2ab2b6fae3b5d4610e2e55910526065ec853189502d293efaf900b092",
+  "steps": 3,
+  "warmup_seconds": 16.346402100054547,
+  "validation_history": [
+    {
+      "step": 0,
+      "asr": 0.12903225806451613,
+      "training_time": 0.0
+    },
+    {
+      "step": 3,
+      "asr": 0.25806451612903225,
+      "training_time": 0.1857888001250103,
+      "loss": -0.5428237468004227,
+      "gradient_norm": 0.3752003312110901
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "optimizer_sha256": "1e63053f85b5253dd54255f47beeb5db95da275322ce4f90be7dcaafeddb64ac",
+  "interrupted_runs": [
+    "defense_eot_control__R__s5__t0__seed102__k4"
+  ],
+  "status": "candidate_rejected",
+  "completed_runs_reused": true,
+  "reason": "Batched EOT failed predefined loss/gradient equivalence tolerances; sequential EOT retained unchanged",
+  "validation_file": "results/eot_batching_check.json"
+}

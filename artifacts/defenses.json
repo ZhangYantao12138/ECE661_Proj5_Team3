@@ -1,0 +1,82 @@
+{
+  "selected": [
+    {
+      "type": "gaussian",
+      "sigma": 0.5
+    },
+    {
+      "type": "resize_pad",
+      "sizes": [
+        30,
+        31,
+        32
+      ]
+    }
+  ],
+  "validation": [
+    {
+      "config": {
+        "type": "gaussian",
+        "sigma": 0.25
+      },
+      "clean_drop_pp": 0.0
+    },
+    {
+      "config": {
+        "type": "gaussian",
+        "sigma": 0.5
+      },
+      "clean_drop_pp": 1.739999999999997
+    },
+    {
+      "config": {
+        "type": "gaussian",
+        "sigma": 0.75
+      },
+      "clean_drop_pp": 22.75999999999999
+    },
+    {
+      "family": "gaussian",
+      "selected": {
+        "type": "gaussian",
+        "sigma": 0.5
+      },
+      "within_clean_drop_limit": true
+    },
+    {
+      "config": {
+        "type": "resize_pad",
+        "sizes": [
+          30,
+          31,
+          32
+        ]
+      },
+      "clean_drop_pp": 2.0675
+    },
+    {
+      "config": {
+        "type": "resize_pad",
+        "sizes": [
+          28,
+          30,
+          32
+        ]
+      },
+      "clean_drop_pp": 2.002499999999996
+    },
+    {
+      "family": "resize_pad",
+      "selected": {
+        "type": "resize_pad",
+        "sizes": [
+          30,
+          31,
+          32
+        ]
+      },
+      "within_clean_drop_limit": false
+    }
+  ],
+  "checkpoint_hash": "88c98d6ce875673806386527c75ae17e8ffd795c00413155c360468812f3dacc"
+}
